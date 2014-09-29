@@ -22,10 +22,6 @@ height: 120px;
 }
 
 
-
-
-
-
 section.paragraphe
 {
 width: 600px;
@@ -42,7 +38,7 @@ color: grey;
 font-variant: normal;
 }
 
-input
+input, select, option
 {
 border:1px solid grey;
 min-width:100px;
@@ -54,6 +50,19 @@ margin: 5px;
 #submit
 {
 background-color: green;
+color: white;
+margin-left:20px;
+margin-top: 20px;
+box-shadow:1px 1px 1px grey;
+font-variant: small-caps;
+font-weight: bold;
+height: 30px;
+width: 60px;
+}
+
+#reset
+{
+background-color: red;
 color: white;
 margin-left:175px;
 margin-top: 20px;
