@@ -42,6 +42,16 @@ color: grey;
 font-variant: normal;
 }
 
+#credit
+{
+font-variant : normal;
+}
+section.paragraphe p{
+	width: 400px;
+	float: left:
+	display: inline;
+}
+
 input
 {
 border:1px solid grey;
@@ -49,6 +59,25 @@ min-width:100px;
 border-radius:5px;
 box-shadow:1px 1px 2px #C0C0C0 inset;
 margin: 5px;
+}
+
+input[name=envoyer]{
+	background-color: green;
+	color: white;
+	font-variant: small-caps;
+	font-weight: bold;
+	height: 30px;
+	width: 60px;
+	display: inline;
+	margin-left:485px;
+	width: 120px;
+}
+
+textarea
+{
+height: 100px;
+width: 600px;
+clear: both;
 }
 
 #submit
