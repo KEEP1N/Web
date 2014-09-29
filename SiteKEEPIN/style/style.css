@@ -47,6 +47,14 @@ box-shadow:1px 1px 2px #C0C0C0 inset;
 margin: 10px;
 margin-left:150px;
 }
+input.boutonAdmin{
+border:1px solid grey;
+min-width:100px;
+border-radius:5px;
+box-shadow:1px 1px 2px #C0C0C0 inset;
+margin: 10px;
+margin-left:100px;
+}
 
 #submit
 {
