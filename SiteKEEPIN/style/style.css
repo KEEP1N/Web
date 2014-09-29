@@ -61,7 +61,18 @@ height: 30px;
 width: 60px;
 }
 
-#reset
+#submitcc
+{background-color: green;
+color: white;
+margin-left:100px;
+margin-top: 20px;
+box-shadow:1px 1px 1px grey;
+font-variant: small-caps;
+font-weight: bold;
+height: 30px;
+width: 60px;}
+
+#resetcc
 {
 background-color: red;
 color: white;
