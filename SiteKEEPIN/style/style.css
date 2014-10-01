@@ -14,13 +14,14 @@ display: block;
 margin-left: 200px;
 margin-top: 100px;
 }
+
+
 section.logo
 {
-background-image: url(../image/logo.png);
+
 width: 140px;
 height: 120px;
 }
-
 
 section.paragraphe
 {
