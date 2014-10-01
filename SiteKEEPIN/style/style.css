@@ -45,7 +45,8 @@ font-variant: normal;
 {
 font-variant : normal;
 }
-section.paragraphe p{
+section.paragraphe p
+{
 	width: 400px;
 	float: left:
 	display: inline;
@@ -53,25 +54,26 @@ section.paragraphe p{
 
 input
 
-#boutonAdmin{
+#boutonAdmin
+{
 min-width: 150px;
 margin-left:120px;
 text-align: center;
 }
 
 input, select, option
-
 {
 border:1px solid grey;
 min-width:100px;
 border-radius:5px;
 box-shadow:1px 1px 2px #C0C0C0 inset;
-margin: 10px;
-margin-left:150px;
+margin-bottom: 20px;
+margin-left:20px;
 }
 
 
-input[name=envoyer]{
+input[name=envoyer]
+{
 	background-color: green;
 	color: white;
 	font-variant: small-caps;
