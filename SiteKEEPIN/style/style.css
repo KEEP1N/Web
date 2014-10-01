@@ -22,10 +22,6 @@ height: 120px;
 }
 
 
-
-
-
-
 section.paragraphe
 {
 width: 600px;
@@ -42,6 +38,7 @@ color: grey;
 font-variant: normal;
 }
 
+
 #credit
 {
 font-variant : normal;
@@ -53,13 +50,24 @@ section.paragraphe p{
 }
 
 input
+
+#boutonAdmin{
+min-width: 150px;
+margin-left:120px;
+text-align: center;
+}
+
+input, select, option
+
 {
 border:1px solid grey;
 min-width:100px;
 border-radius:5px;
 box-shadow:1px 1px 2px #C0C0C0 inset;
-margin: 5px;
+margin: 10px;
+margin-left:150px;
 }
+
 
 input[name=envoyer]{
 	background-color: green;
@@ -80,11 +88,36 @@ width: 600px;
 clear: both;
 }
 
+
 #submit
 {
 background-color: green;
 color: white;
 margin-left:175px;
+margin-top: 20px;
+box-shadow:1px 1px 1px grey;
+font-variant: small-caps;
+font-weight: bold;
+height: 30px;
+width: 60px;
+}
+
+#submitcc
+{background-color: green;
+color: white;
+margin-left:100px;
+margin-top: 20px;
+box-shadow:1px 1px 1px grey;
+font-variant: small-caps;
+font-weight: bold;
+height: 30px;
+width: 60px;}
+
+#resetcc
+{
+background-color: red;
+color: white;
+margin-left:20px;
 margin-top: 20px;
 box-shadow:1px 1px 1px grey;
 font-variant: small-caps;
@@ -114,7 +147,6 @@ color: #556B2F;
 margin-left: 170px;
 font-size: 12px;
 }
-
 
 
 
