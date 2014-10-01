@@ -48,7 +48,29 @@ margin-bottom: 40px;
 color: grey;
 font-variant: normal;
 }
+table
+{
+ border-collapse: collapse;
+}
+th
+{
+border: 1px solid black;
+width: 80px;
+}
+tr
+{
+width: 50px;
+}
 
+td
+{
+border: 1px solid black;
+}
+
+td, th
+{
+text-align: center
+}
 
 #credit
 {
