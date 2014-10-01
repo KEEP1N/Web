@@ -48,6 +48,19 @@ margin-bottom: 40px;
 color: grey;
 font-variant: normal;
 }
+table
+{
+ border-collapse: collapse;
+}
+th
+{
+border: 1px solid black;
+width: 80px;
+}
+tr
+{
+width: 50px;
+}
 
 #supprimercompte h1
 {
@@ -56,6 +69,17 @@ margin-left: 165px;
 margin-bottom: 40px;
 color: grey;
 font-variant: normal;
+
+
+td
+{
+border: 1px solid black;
+}
+
+td, th
+{
+text-align: center
+
 }
 
 #credit
@@ -69,7 +93,6 @@ float: left:
 display: inline;
 }
 
-input
 
 #boutonAdmin
 {
