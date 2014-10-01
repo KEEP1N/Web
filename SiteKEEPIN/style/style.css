@@ -40,7 +40,7 @@ color: grey;
 font-variant: normal;
 }
 
-<<<<<<< HEAD
+
 #histoadmin{
 width: 600px;
 margin-left: 120px;
@@ -50,12 +50,11 @@ font-variant: small-caps;
 
 #histoadmin h1{
 margin-left: 150px;
-=======
+}
 #mdpoublie h1
 {
 margin-top: 70px;
 margin-left: 60px;
->>>>>>> 45c92ff5915c3ae3b58b86f8cae1cde10f8782ee
 margin-bottom: 40px;
 color: grey;
 font-variant: normal;
@@ -74,12 +73,8 @@ tr
 width: 50px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 45c92ff5915c3ae3b58b86f8cae1cde10f8782ee
-=======
+
 td
 {
 border: 1px solid black;
@@ -89,7 +84,6 @@ td, th
 {
 text-align: center
 }
->>>>>>> cfca1db0c9375d99e8fb34bba4352cb5a2b09ab6
 
 #credit
 {
