@@ -60,11 +60,36 @@ margin-bottom: 40px;
 color: grey;
 font-variant: normal;
 }
+table
+{
+ border-collapse: collapse;
+}
+th
+{
+border: 1px solid black;
+width: 80px;
+}
+tr
+{
+width: 50px;
+}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
 >>>>>>> 45c92ff5915c3ae3b58b86f8cae1cde10f8782ee
+=======
+td
+{
+border: 1px solid black;
+}
+
+td, th
+{
+text-align: center
+}
+>>>>>>> cfca1db0c9375d99e8fb34bba4352cb5a2b09ab6
 
 #credit
 {
