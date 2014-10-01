@@ -40,6 +40,21 @@ color: grey;
 font-variant: normal;
 }
 
+#histoadmin{
+width: 600px;
+margin-left: 120px;
+margin-top: 70px;
+font-variant: small-caps;
+}
+
+#histoadmin h1{
+margin-left: 150px;
+margin-bottom: 40px;
+color: grey;
+font-variant: normal;
+}
+
+
 
 #credit
 {
