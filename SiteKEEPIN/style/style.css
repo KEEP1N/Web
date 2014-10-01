@@ -32,7 +32,7 @@ margin-top: 70px;
 font-variant: small-caps;
 }
 
-h1
+.paragraphe h1
 {
 margin-left: 40px;
 margin-bottom: 40px;
@@ -40,6 +40,7 @@ color: grey;
 font-variant: normal;
 }
 
+<<<<<<< HEAD
 #histoadmin{
 width: 600px;
 margin-left: 120px;
@@ -49,44 +50,55 @@ font-variant: small-caps;
 
 #histoadmin h1{
 margin-left: 150px;
+=======
+#mdpoublie h1
+{
+margin-top: 70px;
+margin-left: 60px;
+>>>>>>> 45c92ff5915c3ae3b58b86f8cae1cde10f8782ee
 margin-bottom: 40px;
 color: grey;
 font-variant: normal;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 45c92ff5915c3ae3b58b86f8cae1cde10f8782ee
 
 #credit
 {
 font-variant : normal;
 }
-section.paragraphe p{
-	width: 400px;
-	float: left:
-	display: inline;
+section.paragraphe p
+{
+width: 400px;
+float: left:
+display: inline;
 }
 
 input
 
-#boutonAdmin{
+#boutonAdmin
+{
 min-width: 150px;
 margin-left:120px;
 text-align: center;
 }
 
 input, select, option
-
 {
 border:1px solid grey;
 min-width:100px;
 border-radius:5px;
 box-shadow:1px 1px 2px #C0C0C0 inset;
-margin: 10px;
-margin-left:150px;
+margin-bottom: 20px;
+margin-left:20px;
 }
 
 
-input[name=envoyer]{
+input[name=envoyer]
+{
 	background-color: green;
 	color: white;
 	font-variant: small-caps;
