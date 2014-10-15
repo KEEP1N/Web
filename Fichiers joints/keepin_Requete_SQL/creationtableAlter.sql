@@ -7,6 +7,7 @@ empl_mail varchar(255),
 empl_codePin numeric(4),
 empl_password varchar(6),
 empl_tel varchar(10),
+empl_ro_ID int not null,
 constraint pk_employer primary key(empl_ID));
 
 create table poste(post_ID int not null AUTO_INCREMENT,
@@ -38,6 +39,27 @@ create table batiment(bat_ID int not null AUTO_INCREMENT,
 bat_libelle varchar(7),
 constraint pk_batiment primary key(bat_ID));
 
- create table role(ro_ID int not null AUTO_increment,
- ro_libelle varchar(10),
- constraint pk_role primary key(ro_Id));
+create table role(ro_ID int not null AUTO_increment,
+ro_libelle varchar(10),
+constraint pk_role primary key(ro_Id));
+
+create table deverrouiller(dev_port_ID int not null,
+dev_acc_ID int not null,
+dev_heure time,
+dev_dateJour date,
+constraint pk_deverouiller primary key(dev_port_ID,dev_acc_ID));
+
+alter table deverrouiller
+add constraint fk_deverrouiller_dev_port_ID
+foreign key(dev_port_ID)
+references porte(port_ID);
+
+alter table deverrouiller
+add constraint fk_deverrouiller_dev_acc_ID
+foreign key(dev_acc_ID)
+references acces(acc_ID);
+
+alter table employe
+add constraint fk_employe_empl_ro_ID
+foreign key(empl_ro_ID)
+references role(ro_ID);
