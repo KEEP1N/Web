@@ -26,8 +26,8 @@
 		<option value="2">Robert.Durand</option>
 		<option value="3">Yves.Fesket</option></select>@keepin.com<br /></br>
 	
-	<a href = "Modif_Compte.html"><input type="submit" id="submitcc" value="Valider"/></a>
-	<a href = "accueilAdmin.html"><input type="reset" id="resetcc" value="Annuler"/></a>
+	<a href = "ModifierCompte2.php"><input type="submit" id="submitcc" value="Valider"/></a>
+	<a href = "AccueilAdmin.php"><input type="reset" id="resetcc" value="Annuler"/></a>
 	</section>
 	
 

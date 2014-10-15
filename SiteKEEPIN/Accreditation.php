@@ -24,7 +24,7 @@
 		<p>Faites votre demande en<br/>
 		expliquant la durée et le motif<br/>
 		de celle-ci
-		<a href = "moncompte.html"><input type="button" name="envoyer" value = "Envoyer"; onclick="alert('Félicitations! Votre e-mail a été envoyé ! Vous receverez une réponse dès que possible.')"/></a></p>
+		<a href = "AccueilMonCompte.php"><input type="button" name="envoyer" value = "Envoyer"; onclick="alert('Félicitations! Votre e-mail a été envoyé ! Vous receverez une réponse dès que possible.')"/></a></p>
 		<textarea name ="textMulti"></textarea>
 	</section>
 	
