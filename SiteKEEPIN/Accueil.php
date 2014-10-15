@@ -19,12 +19,14 @@
 	</section>
 	</header>
 	
-	<div id=mdpoublie><h1> Mot de passe oublié</h1></div>
 	<section class=paragraphe>
-	<label for="mail">Adresse e-mail: </label><input type="email" name="mail"/></br>
-	<input type="submit" id="submit" value="Valider"; onclick = "alert ('Vous allez recevoir votre mot de passe par e-mail')"/>
+	<label for ="pseudo">Pseudo :</label> <input type="text" name="pseudo" id="pseudo" /></br>
+	<label for="mdp">Mot de passe : </label><input type="text" name="mdp" /></br>
+	<a href="MDPOublie.php" id="mdpoublie">Mot de passe oublié?</a><br/>
+	<input type="submit" id="submit" value="Valider"/>
 	</section>
 	
+
 	<footer>
 	Copyright Corp'Access - Tous droits réservés <br/>
 	</footer>

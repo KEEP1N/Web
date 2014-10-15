@@ -23,7 +23,7 @@
 	<section class=paragraphe>
 	<label for="Suppr">Sélectionner le compte :</label><select name="Suppression" id="Suppr"><br/>
 
-	<a href = "accueilAdmin.html"><input type="submit" id="submit" value="Valider"; onclick="alert('Attention! Vous êtes sur le point de supprimer ce compte. Êtes-vous sûr?')"/></a>
+	<a href = "AccueilAdmin.php"><input type="submit" id="submit" value="Valider"; onclick="alert('Attention! Vous êtes sur le point de supprimer ce compte. Êtes-vous sûr?')"/></a>
 	</section>
 	
 

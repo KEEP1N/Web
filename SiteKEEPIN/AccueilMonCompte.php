@@ -39,9 +39,9 @@
 		</table>
 		</br>
 		</br>
-		<a href = "historiqueuser.html"><input type="button" name="consultermonhistorique" value="Consulter mon historique">
-		<a href = "accreditation.html"><input type="button" name="demandeaccreditations" value="Demande d'accréditations">
-		<a href = "modif_mdp.html"><input type="button" name="changermdp" value="Changer son mot de passe">
+		<a href = "HistoriqueUser.php"><input type="button" name="consultermonhistorique" value="Consulter mon historique">
+		<a href = "Accreditation.php"><input type="button" name="demandeaccreditations" value="Demande d'accréditations">
+		<a href = "ModifierMDP.php"><input type="button" name="changermdp" value="Changer son mot de passe">
 	</section>
 	
 	

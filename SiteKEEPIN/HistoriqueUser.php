@@ -19,35 +19,26 @@
 	</section>
 	</header>
 	
-	<div id="histoadmin">
-		<h1 class=titreadmin>Historique</h1>
-		</div>
-		
-	<section class=paragraphe>
+	<section class="paragraphe">
+		<h1>Historique de </br>Jacques Martin</h1>
 		
 		<table>
 			<tr>
-				<th>Nom</th>
-				<th>Prenom</th>
-				<th>Service</th>
-				<th>Poste</th>
-				<th>Salle</th>
-				<th>date</th>
-				<th>heure</th>
+				<th>Porte</th>
+				<th>Date</th>
+				<th>Heure</th>
 			</tr>
 			<tr>
-				<td>Martin</td>
-				<td>Jean</td>
-				<td>informatique</td>
-				<td>développeur</td>
 				<td>A008</td>
 				<td>09/09/14</td>
 				<td>11h20</td>
+			</tr>
 		</table>
-		<a href = "accueilAdmin.html"><input type="button" name="btretour" value="Retour" id="btretour"/></a>
-		
-
+		</br>
+		</br>
+		<a href = "AccueilMonCompte.php"><input type="button" name="boutonmoncompte" value="Retour" id ="boutonmoncompte">
 	</section>
+	
 	
 
 	<footer>
@@ -56,3 +47,5 @@
 
 	</body>
 </html>
+ 
+
