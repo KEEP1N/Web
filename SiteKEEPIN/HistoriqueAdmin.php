@@ -1,3 +1,7 @@
+<?php
+	include'fonctionphp.php';
+	
+?>
 <!DOCTYPE html>
 <html>
 	<head>
