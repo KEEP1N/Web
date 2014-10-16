@@ -24,7 +24,7 @@
 	<label for ="Compte">Selectionner le compte à modifier : </label><select name="Compte" id="Compte"><br />
 		<option value="1">Jean-mich33</option>
 		<option value="2">Robert.Durand</option>
-		<option value="3">Yves.Fesket</option></select>@keepin.com<br /></br>
+		<option value="3">Yves.Fesket</option></select>@entreprise.com<br /></br>
 	
 	<a href = "ModifierCompte2.php"><input type="submit" id="submitcc" value="Valider"/></a>
 	<a href = "AccueilAdmin.php"><input type="reset" id="resetcc" value="Annuler"/></a>
