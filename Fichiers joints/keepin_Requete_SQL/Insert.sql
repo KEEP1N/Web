@@ -2,6 +2,17 @@ INSERT INTO role (ro_libelle) VALUES
 ("user"),
 ("admin");
 
+
+INSERT INTO poste (post_libelle) VALUES
+('Secrétaire'),
+('Agent de ménage'),
+('Technicien de surface'),
+('Cuisinier'),
+('Comptable'),
+('Programmeur'),
+('Développeur web'),
+('Chef de projet');
+
 INSERT INTO employe
 (empl_matricule, empl_nom, empl_prenom, empl_DDN, empl_mail, empl_codePin, empl_password, empl_tel, empl_ro_ID)
 VALUES
