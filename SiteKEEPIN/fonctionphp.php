@@ -1,5 +1,5 @@
 <?php
-   $serveur='192.168.56.101';
+   $serveur='172.16.101.3'; //A changer à chaque fois pour chaque personne
    $username='root';
    $password='toor';
    $databasename='Keepin';
