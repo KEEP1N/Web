@@ -5,10 +5,18 @@ empl_prenom varchar(150)not null,
 empl_DDN date,
 empl_mail varchar(255),
 empl_codePin numeric(4),
-empl_password varchar(6),
+empl_password varchar(20),
 empl_tel varchar(10),
 empl_ro_ID int not null,
+empl_post_ID int not null,
+empl_entr_numsiret varchar(14)not null,
 constraint pk_employer primary key(empl_ID));
+
+create table entreprise(entr_numsiret varchar(14) not null,
+entr_nom varchar(50),
+entr_denomination char(4),
+entr_tel varchar(10),
+constraint pk_entreprise primary key (entr_numsiret));
 
 create table poste(post_ID int not null AUTO_INCREMENT,
 post_libelle varchar(250),
@@ -25,7 +33,7 @@ constraint pk_niveau primary key(niv_ID));
 create table acces(acc_ID int not null AUTO_INCREMENT,
 acc_dateDebut date,
 acc_DateFin date,
-constraint pk_acces primary key(acc_ID));
+constraint pk_acces primary key(acc_ID)); 
 
 create table porte(port_ID int not null AUTO_INCREMENT,
 port_libelle varchar(7),
@@ -63,3 +71,13 @@ alter table employe
 add constraint fk_employe_empl_ro_ID
 foreign key(empl_ro_ID)
 references role(ro_ID);
+
+alter table employe
+add constraint fk_employe_empl_post_ID
+foreign key (empl_post_ID)
+references poste(post_ID);
+
+alter table employe
+add constraint fk_employe_empl_entr_numsiret
+foreign key(empl_entr_numsiret)
+references entreprise(entr_numsiret);
