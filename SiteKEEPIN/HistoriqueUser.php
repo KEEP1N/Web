@@ -24,7 +24,10 @@
 	</header>
 	
 	<section class="paragraphe">
-		<h1>Historique de </br>Jacques Martin</h1>
+		<h1>Historique de </br>
+		<?php
+			print(User_name());
+		?></h1>
 		
 		<table>
 			<tr>
