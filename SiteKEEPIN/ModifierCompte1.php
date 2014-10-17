@@ -30,8 +30,8 @@
 		<option value="2">Robert.Durand</option>
 		<option value="3">Yves.Fesket</option></select>@entreprise.com<br /></br>
 	
-	<a href = "ModifierCompte2.php"><input type="submit" id="submitcc" value="Valider"/></a>
-	<a href = "AccueilAdmin.php"><input type="reset" id="resetcc" value="Annuler"/></a>
+	<a href = "ModifierCompte2.php"><input type="submit" id="submit" value="Valider"/></a>
+	<a href = "AccueilAdmin.php"><input type="reset" id="reset" value="Annuler"/></a>
 	</section>
 	
 

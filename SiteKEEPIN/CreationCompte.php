@@ -46,8 +46,8 @@
 	
 	<label for ="mdp">Mot de Passe :</label> <input type="text" name="mdp" id=mdp /></br>
 	
-	<a href = "AccueilAdmin.php"><input type="submit" id=submitcc value="Valider"; onclick = "alert('Félicitations ! Nouveau compte créé.')"/></a>
-	<a href = "AccueilAdmin.php"><input type="reset" id=resetcc value="Annuler"/></a>
+	<a href = "AccueilAdmin.php"><input type="submit" id=submit value="Valider"; onclick = "alert('Félicitations ! Nouveau compte créé.')"/></a>
+	<a href = "AccueilAdmin.php"><input type="reset" id=reset value="Annuler"/></a>
 	<br /><br /><br /><br /><br /></section>
 	
 

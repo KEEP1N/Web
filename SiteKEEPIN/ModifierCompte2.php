@@ -46,8 +46,8 @@
 		<option value="2" selected="selected">Niveau 2</option>
 		<option value="3">Niveau 3</option></select><br />
 	
-	<a href = "AccueilAdmin.php"><input type="submit" id="submitcc" value="Valider"; onclick= "alert('Félicitations ! Le compte a été modifié !')"/></a>
-	<a href = "ModifierCompte1.php"><input type="reset" id="resetcc" value="Annuler"/></a>
+	<a href = "AccueilAdmin.php"><input type="submit" id="submit" value="Valider"; onclick= "alert('Félicitations ! Le compte a été modifié !')"/></a>
+	<a href = "ModifierCompte1.php"><input type="reset" id="reset" value="Annuler"/></a>
 	<br /><br /><br /><br /><br /></section>
 	
 
