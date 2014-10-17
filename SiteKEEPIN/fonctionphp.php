@@ -1,14 +1,9 @@
 <?php
-   $serveur='127.0.0.1'; //A changer à chaque fois pour chaque personne
-   $username='root';
-<<<<<<< HEAD
-   $password='toor';
-   $databasename='K
-   eepin';
-=======
-   $password='';
-   $databasename='Keepin';
->>>>>>> 6e53df78a9d2fd09957a20c2ed603ace66bc1e5e
+   	$serveur='192..168.56.101'; //A changer à chaque fois pour chaque personne
+   	$username='root';
+	$password='toor';
+   	$databasename='Keepin';
+
    
    $idconn=mysqli_connect($serveur,$username,$password);
    if (mysqli_errno($idconn)){
