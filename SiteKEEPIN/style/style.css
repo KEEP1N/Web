@@ -4,6 +4,7 @@ margin: 0px;
 background-repeat: no repeat;
 background-image: url(../image/font.gif);
 background-size: cover, 100%;
+background-attachment: fixed;
 font-family: georgia;
 
 }
