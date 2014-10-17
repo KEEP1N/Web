@@ -1,3 +1,10 @@
+/* Base du code */
+
+html
+{
+height: 100%;
+}
+
 body
 {
 margin: 0px;
@@ -6,12 +13,6 @@ background-image: url(../image/font.gif);
 background-size: cover, 100%;
 background-attachment: fixed;
 font-family: georgia;
-
-}
-
-html
-{
-height: 100%;
 }
 
 header
@@ -21,7 +22,7 @@ margin-left: 200px;
 margin-top: 100px;
 }
 
-section.logo
+.logo
 {
 background-image: url(../image/logo.png);
 width: 140px;
@@ -29,7 +30,7 @@ height: 120px;
 margin-left: 70px;
 }
 
-section.paragraphe
+.paragraphe
 {
 width: 600px;
 margin-left: 120px;
@@ -46,49 +47,25 @@ font-variant: normal;
 }
 
 
-#histoadmin{
-width: 600px;
-margin-left: 120px;
-margin-top: 70px;
-color: grey;
-font-variant: small-caps;
-}
 
-#histoadmin h1{
-margin-left: 150px;
-}
-#mdpoublie h1
-{
-margin-top: 70px;
-margin-left: 60px;
-margin-bottom: 40px;
-color: grey;
-font-variant: normal;
-}
+
+/* Tableau */
 table
 {
  border-collapse: collapse;
+ margin-bottom: 30px;
 }
+
 th
 {
 border: 1px solid black;
 width: 80px;
 }
+
 tr
 {
 width: 50px;
 }
-
-
-#supprimercompte h1
-{
-margin-top: 70px;
-margin-left: 165px;
-margin-bottom: 40px;
-color: grey;
-font-variant: normal;
-}
-
 
 td
 {
@@ -98,138 +75,140 @@ border: 1px solid black;
 td, th
 {
 text-align: center
-
-}
-
-#credit
-{
-font-variant : normal;
-}
-section.paragraphe p
-{
-width: 400px;
-float: left:
-display: inline;
-}
-
-
-#boutonAdmin
-{
-min-width: 150px;
-margin-left:120px;
-text-align: center;
-}
-
-#boutonmoncompte
-{
-height : 40px;
-min-width: 150px;
-margin-left: 50px;
-text-align: center;
-}
-input, select, option
-{
-border:1px solid grey;
-min-width:100px;
-border-radius:5px;
-box-shadow:1px 1px 2px #C0C0C0 inset;
-margin-bottom: 20px;
-margin-left:20px;
-}
-
-input:focus
-{
-box-shadow: 1px 1px 2px #87CEFA;
-border:1px solid #87CEFA;
-}
-
-input:hover
-{
-box-shadow: 1px 1px 2px #87CEFA;
-border:1px solid #87CEFA;
-
 }
 
 
 
-textarea
-{
-height: 100px;
-width: 600px;
-clear: both;
-}
+
+/* Formulaire - Base */
+
+	/* Case */
+	label
+	{
+	width: 150px;
+	display:block;
+	float: left;
+	}
+	
+	input , select
+	{
+	min-width:100px;
+	margin-bottom: 20px;
+	margin-left:20px;
+	border:1px solid grey;
+	border-radius:5px;
+	box-shadow:1px 1px 2px #C0C0C0 inset;
+	}
+
+	textarea
+	{
+	height: 100px;
+	width: 600px;
+	clear: both;
+	}
+	
+	/* Bouton */
+	#button
+	{
+	margin: 10px;
+	padding: 4px;
+	}
+
+	#boutonAdmin
+	{
+	min-width: 150px;
+	margin-left:120px;
+	text-align: center;
+	}
+
+	#boutonmoncompte
+	{
+	height : 40px;
+	min-width: 150px;
+	margin-left: 50px;
+	text-align: center;
+	}
+
+	#submit, #envoyer
+	{
+	background-color: green;
+	color: white;
+	margin-left:175px;
+	margin-top: 20px;
+	box-shadow:1px 1px 1px grey;
+	font-variant: small-caps;
+	font-weight: bold;
+	height: 30px;
+	width: 60px;
+	}
+
+	#reset
+	{
+	background-color: red;
+	color: white;
+	margin-left:20px;
+	margin-top: 20px;
+	box-shadow:1px 1px 1px grey;
+	font-variant: small-caps;
+	font-weight: bold;
+	height: 30px;
+	width: 60px;
+	}
+
+	/* Liens */
+	a
+	{
+	color: grey;
+	}
+
+	#mdpoublie
+	{
+	margin-left: 170px;
+	font-size: 12px;
+	}
 
 
-#submit, #envoyer
-{
-background-color: green;
-color: white;
-margin-left:175px;
-margin-top: 20px;
-box-shadow:1px 1px 1px grey;
-font-variant: small-caps;
-font-weight: bold;
-height: 30px;
-width: 60px;
-}
+	
+/* Formulaire - Animation */
 
+	/* Case */
+	input:focus
+	{
+	box-shadow: 1px 1px 2px #87CEFA;
+	border:1px solid #87CEFA;
+	}
 
-#reset
-{
-background-color: red;
-color: white;
-margin-left:20px;
-margin-top: 20px;
-box-shadow:1px 1px 1px grey;
-font-variant: small-caps;
-font-weight: bold;
-height: 30px;
-width: 60px;
-}
+	input:hover
+	{
+	box-shadow: 1px 1px 2px #87CEFA;
+	border:1px solid #87CEFA;
+	}
 
-#submit:hover, #envoyer:hover
-{
-background-color: white;
-color: green;
-border: 1px solid green;
-}
+	/* Bouton */
+	#submit:hover, #envoyer:hover
+	{
+	background-color: white;
+	color: green;
+	border: 1px solid green;
+	}
+	
+	#reset:hover
+	{
+	background-color: white;
+	color: red;
+	border: 1px solid red;
+	}
 
-#reset:hover
-{
-background-color: white;
-color: red;
-border: 1px solid red;
-}
+	/* Liens */
+	a:hover, a:focus, a:active
+	{
+	color: #556B2F;
+	}
 
-#btretour{
-margin-top:40px;
-margin-left:233px;
-}
-
-label
-{
-width: 150px;
-display:block;
-float: left;
-}
-
-a
-{
-color: grey;
-}
-a:hover, a:focus, a:active
-{
-color: #556B2F;
-}
-
-#mdpoublie
-{
-margin-left: 170px;
-font-size: 12px;
-}
-
-
-
+	
+	
+	
+/* Pied de page */
 
  footer
  {
