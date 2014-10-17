@@ -1,7 +1,8 @@
 ﻿<?php
-	include'fonctionphp.php';
-	
+	include'script/fonctionphp.php';
+	include'script/db.php';
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
