@@ -1,7 +1,7 @@
 <?php
-   $serveur='172.16.101.3'; //A changer à chaque fois pour chaque personne
+   $serveur='127.0.0.1'; //A changer à chaque fois pour chaque personne
    $username='root';
-   $password='toor';
+   $password='';
    $databasename='Keepin';
    
    $idconn=mysqli_connect($serveur,$username,$password);
