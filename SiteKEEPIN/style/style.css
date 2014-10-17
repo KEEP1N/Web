@@ -1,6 +1,7 @@
 body
 {
 margin: 0px;
+background-repeat: no repeat;
 background-image: url(../image/font.gif);
 background-size: cover, 100%;
 font-family: georgia;
@@ -117,6 +118,7 @@ min-width: 150px;
 margin-left:120px;
 text-align: center;
 }
+
 #boutonmoncompte
 {
 height : 40px;
@@ -138,6 +140,13 @@ input:focus
 {
 box-shadow: 1px 1px 2px #87CEFA;
 border:1px solid #87CEFA;
+}
+
+input:hover
+{
+box-shadow: 1px 1px 2px #87CEFA;
+border:1px solid #87CEFA;
+
 }
 
 
@@ -217,8 +226,6 @@ color: #556B2F;
 margin-left: 170px;
 font-size: 12px;
 }
-
-
 
 
 
