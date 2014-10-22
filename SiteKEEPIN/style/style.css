@@ -8,11 +8,14 @@ height: 100%;
 body
 {
 margin: 0px;
+padding: 0px;
+min-height: 100%;
 background-repeat: no repeat;
 background-image: url(../image/font.gif);
 background-size: cover, 100%;
 background-attachment: fixed;
 font-family: georgia;
+position: relative;
 }
 
 header
@@ -214,11 +217,11 @@ text-align: center
  {
  color: grey;
  text-align: center;
- width: 100%;
- height: 20px;
  opacity: 0.6;
  position: absolute;
- bottom: 0; 
+ bottom: 0;
+ width: 100%;
+ height: 20px;
  }
  
  
