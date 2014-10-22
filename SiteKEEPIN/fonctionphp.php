@@ -3,8 +3,7 @@
    $username='root';
 
    $password='toor';
-   $databasename='K
-   eepin';
+   $databasename='Keepin';
 
    $password='';
    $databasename='Keepin';
