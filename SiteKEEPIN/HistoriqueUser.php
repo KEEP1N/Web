@@ -1,58 +1,39 @@
 <?php
-	include'fonctionphp.php';
-	
+	include'script/fonctionphp.php';
+	include'script/db.php';
+	include 'basehtml.php';
 ?>
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-        <link rel="stylesheet" href="style/style.css" />
-		<title>
-		Corp'Access - Société de sécurité informatique
-		</title>
-	</head>
-	<body>
-	<header>
-	<style type="text/css">
-	a:link 
-	{ 
-	text-decoration:none; 
-	}
-	</style>
-	<section class=logo>
-	</section>
-	</header>
-	
-	<section class="paragraphe">
-		<h1>Historique de </br>
-		<?php
-			print(User_name());
-		?></h1>
-		
-		<table>
-			<tr>
-				<th>Porte</th>
-				<th>Date</th>
-				<th>Heure</th>
-			</tr>
-			<tr>
-				<td>A008</td>
-				<td>09/09/14</td>
-				<td>11h20</td>
-			</tr>
-		</table>
-		</br>
-		</br>
-		<a href = "AccueilMonCompte.php"><input type="button" name="boutonmoncompte" value="Retour" id ="boutonmoncompte">
-	</section>
-	
-	
 
-	<footer>
-	Copyright Corp'Access - Tous droits réservés <br/>
-	</footer>
+	<body>
+	
+		<section class="paragraphe">
+	
+			<h1> Historique de
+			<?php
+				print(User_name());
+			?>
+			</h1>
+			<table style="margin-left:100px">
+				<tr>
+					<th>Porte</th>
+					<th>Date</th>
+					<th>Heure</th>
+				</tr>
+				<tr>
+					<td>A008</td>
+					<td>09/09/14</td>
+					<td>11h20</td>
+				</tr>
+			</table>
+			<a href = "AccueilMonCompte.php"><input type="button" id="button" value="Retour" style="margin-left:180px">
+		
+		</section>
 
 	</body>
+	
 </html>
  
 

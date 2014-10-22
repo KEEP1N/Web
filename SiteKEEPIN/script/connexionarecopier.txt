@@ -1,0 +1,15 @@
+Créer un fichier db.php qui contiendra:
+
+
+<?php
+   $serveur= // IP A MODIFIER ;
+   $username='root';
+   $password='toor';//MDP A MODIFIER
+   $databasename='Keepin';
+   
+   
+   $idconn=mysqli_connect($serveur,$username,$password);
+   if (mysqli_errno($idconn)){
+   		print(mysqli_error($idconn));}
+   $select_database=mysqli_select_db($idconn,$databasename);
+ ?>
