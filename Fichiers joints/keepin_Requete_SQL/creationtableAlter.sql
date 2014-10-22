@@ -53,9 +53,15 @@ constraint pk_role primary key(ro_Id));
 
 create table deverrouiller(dev_port_ID int not null,
 dev_acc_ID int not null,
+dev_niv_ID int not null,
 dev_heure time,
 dev_dateJour date,
-constraint pk_deverouiller primary key(dev_port_ID,dev_acc_ID));
+constraint pk_deverouiller primary key(dev_port_ID,dev_acc_ID,dev_niv_ID));
+
+create table comporter(comp_niv_ID int not null,
+comp_serv_ID int not null,
+constraint pk_comporter primary  key(comp_niv_ID,comp_serv_ID));
+
 
 alter table deverrouiller
 add constraint fk_deverrouiller_dev_port_ID
@@ -66,6 +72,11 @@ alter table deverrouiller
 add constraint fk_deverrouiller_dev_acc_ID
 foreign key(dev_acc_ID)
 references acces(acc_ID);
+
+alter table deverrouiller
+add constraint fk_deverrouiller_dev_niv_ID
+foreign key(dev_niv_ID)
+references niveau(niv_ID);
 
 alter table employe
 add constraint fk_employe_empl_ro_ID
@@ -81,3 +92,14 @@ alter table employe
 add constraint fk_employe_empl_entr_numsiret
 foreign key(empl_entr_numsiret)
 references entreprise(entr_numsiret);
+
+
+alter table  comporter
+add constraint fk_comporter_comp_niv_ID
+foreign key(comp_niv_ID)
+references  niveau(niv_ID);
+
+alter table  comporter
+add constraint fk_comporter_comp_ser_ID
+foreign key(comp_serv_ID)
+references  service(serv_ID);
