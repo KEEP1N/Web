@@ -20,6 +20,7 @@ constraint pk_entreprise primary key (entr_numsiret));
 
 create table poste(post_ID int not null AUTO_INCREMENT,
 post_libelle varchar(250),
+post_serv_ID int not null,
 constraint pk_poste primary key(post_ID));
 
 create table service(serv_ID int not null AUTO_INCREMENT,
@@ -51,7 +52,8 @@ create table role(ro_ID int not null AUTO_increment,
 ro_libelle varchar(10),
 constraint pk_role primary key(ro_Id));
 
-create table deverrouiller(dev_port_ID int not null,
+create table deverrouiller(
+dev_port_ID int not null,
 dev_acc_ID int not null,
 dev_niv_ID int not null,
 dev_heure time,
@@ -93,6 +95,10 @@ add constraint fk_employe_empl_entr_numsiret
 foreign key(empl_entr_numsiret)
 references entreprise(entr_numsiret);
 
+alter table poste
+add constraint fk_poste_post_serv_ID
+foreign key(post_serv_ID)
+references service(serv_ID);
 
 alter table  comporter
 add constraint fk_comporter_comp_niv_ID
