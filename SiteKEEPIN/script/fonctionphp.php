@@ -33,9 +33,9 @@
 		$script = '<table>'.'<tr><th>'.'Nom'.'</th>'.'<th>'.'Prénom'.'</th>'.'<th>'.'Service'.'</th>'.'<th>'.'Poste'.'</th>'.'<th>'.'Code Pin'.'</th></tr>';
 		
 		while ($SQLRow = mysqli_fetch_array ($SQLResult)){
-			$script .= '<tr><td>'.utf8_encode($SQLRow['empl_nom']).'</td>'.'<td>'.utf8_encode($SQLRow['empl_prenom']).'</td>'.'<td>'.$SQLRow['serv_libelle'].'</td>';
-			$script .= .'</td>'.'<td>'.$SQLRow['post_libelle'].'</td>';
-			$script .= '<td>'.$SQLRow['empl_codePIN'].'</td></tr>';
+			$script .= '<tr><td>'.utf8_encode($SQLRow['empl_nom']).'</td>'.'<td>'.utf8_encode($SQLRow['empl_prenom']).'</td>';
+			$script .= .'<td>'.$SQLRow['serv_libelle'].'</td>'.'<td>'.$SQLRow['post_libelle'].'</td>';
+			$script .= .'<td>'.$SQLRow['empl_codePIN'].'</td></tr>';
 		}
 		$script .= '</table>';
 		print($script);
