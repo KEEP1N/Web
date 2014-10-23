@@ -28,15 +28,15 @@
 	
 	
 	function MonCompte(){
-		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN 
-FROM service, poste INNER JOIN employe ON post_ID = empl_post_ID;' ;
+		global $idconn;
+		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN FROM poste INNER JOIN employe ON post_ID = empl_post_ID INNER JOIN service ON post_serv_ID = serv_ID' ;
 		$SQLResult = mysqli_query($idconn, $SQLQuery);
-		$script = '<table>'.'<tr><th>'.'Nom'.'</th>'.'<th>'.'Prénom'.'</th>'.'<th>'.'Service'.'</th>'.'<th>'.'Poste'.'</th>'.'<th>'.'Code Pin'.'</th></tr>';
+		$script = '<table>'.'<tr><th>'.'Nom'.'</th>'.'<th>'.'Prénom'.'</th>'.'<th>'.'Service'.'</th>'.'<th>'.'Poste'.'</th>'.'<th>'."Code d'accés".'</th></tr>';
 		
 		while ($SQLRow = mysqli_fetch_array ($SQLResult)){
 			$script .= '<tr><td>'.utf8_encode($SQLRow['empl_nom']).'</td>'.'<td>'.utf8_encode($SQLRow['empl_prenom']).'</td>';
-			$script .= .'<td>'.$SQLRow['serv_libelle'].'</td>'.'<td>'.$SQLRow['post_libelle'].'</td>';
-			$script .= .'<td>'.$SQLRow['empl_codePIN'].'</td></tr>';
+			$script .= '<td>'.utf8_encode($SQLRow['serv_libelle']).'</td>'.'<td>'.utf8_encode($SQLRow['post_libelle']).'</td>';
+			$script .= '<td>'.$SQLRow['empl_codePIN'].'</td></tr>';
 		}
 		$script .= '</table>';
 		print($script);
