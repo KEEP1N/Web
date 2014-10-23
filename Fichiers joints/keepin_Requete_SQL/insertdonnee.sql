@@ -36,3 +36,27 @@ INSERT INTO employe
 VALUES
 ('01', 'JACQUES', 'Michel', '1967.10.02', 'MichelJacques@corpaccess.com', '1234', 'password', '0600000006', 1,1,'000000000001'),
 ('02', 'MARTIN', 'Jeanne', '1992.04.30', 'MARTINJeanne@corpaccess.com', '5678', 'MDP', '0625698001', 1, 6,'000000000001');
+
+INSERT INTO porte (port_libelle)
+VALUES ('A008'),
+('K207'),
+('B509'),
+('C301');
+
+INSERT INTO acces (acc_dateDebut, acc_DateFin)
+VALUES
+('2014.10.23', '2014.11.23');
+
+INSERT INTO deverrouiller (dev_port_ID, dev_acc_ID, dev_niv_ID, dev_heure, dev_dateJour)
+VALUES
+(1, 1, 1, '17:05:34','2014-09-14')
+(1, 1, 2, '18:59:26','2014-10-22');
+
+INSERT INTO comporter (comp_niv_ID, comp_serv_ID)
+VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 1),
+(2, 3);
+

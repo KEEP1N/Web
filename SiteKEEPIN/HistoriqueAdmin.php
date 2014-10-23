@@ -32,6 +32,7 @@
 					<td>11h20</td>
 				</tr>
 			</table>
+			<?php /*HistoriqueAdmin()*/ ?>
 			<a href="AccueilAdmin.php"> <input type="button" id="button" value="Retour" style="margin-left:180px"/> </a>
 
 		</section>
