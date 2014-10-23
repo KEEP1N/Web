@@ -28,7 +28,8 @@
 	
 	
 	function MonCompte(){
-		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN FROM employe, service, poste;' ;
+		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN 
+FROM service, poste INNER JOIN employe ON post_ID = empl_post_ID;' ;
 		$SQLResult = mysqli_query($idconn, $SQLQuery);
 		$script = '<table>'.'<tr><th>'.'Nom'.'</th>'.'<th>'.'Prénom'.'</th>'.'<th>'.'Service'.'</th>'.'<th>'.'Poste'.'</th>'.'<th>'.'Code Pin'.'</th></tr>';
 		
