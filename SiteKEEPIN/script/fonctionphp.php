@@ -26,7 +26,7 @@
 	
 	*/
 	
-	/*
+	
 	function MonCompte(){
 		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN FROM employe, service, poste;' ;
 		$SQLResult = mysqli_query($idconn, $SQLQuery);
@@ -43,7 +43,7 @@
 		}
 		
 		
-	*/ 
+	
    	function dateheure() {
 		$date = date("d-m-Y");
 		$heure = date("H:i");
