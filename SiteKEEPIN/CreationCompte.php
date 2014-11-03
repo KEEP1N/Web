@@ -21,6 +21,12 @@
 			<label for="Tel">Telephone: </label><input type="text" name="Tel" value="+33" id="tel"/></br>
 			<label for ="mail">Adresse e-mail :</label> <input type="text" name="mail"id="email"/><br/>
 			<label for ="mdp">Mot de Passe :</label> <input type="text" name="mdp" id="mdp" /><br/>
+			<label for ="codepin">Code PIN :</label> <input type="text" name="codepin" id="codepin" /><br/>
+			<label for="role">Rôle :</label><select name="Role" id="role"><br/>
+				<option id="1" value="use">Utilisateur</option>
+				<option id="2" value="mod">Modérateur</option></select><br/>
+				
+			
 			<label for="Acc">Accréditation :</label><select name="Accreditation" id="acc"><br/>
 				<option id="option" value="1">Niveau 1</option>
 				<option id="option" value="2">Niveau 2</option>
