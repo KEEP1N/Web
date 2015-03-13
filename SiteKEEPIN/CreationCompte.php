@@ -33,7 +33,7 @@
 				<option id="option" value="3">Niveau 3</option></select><br/>
 
 			<a href = "AccueilAdmin.php"><input type="submit" id=submit value="Valider"; onclick = "alert('Félicitations ! Nouveau compte créé.')"/></a>
-			<a href = "AccueilAdmin.php"><input type="reset" id=reset value="Annuler"/></a>
+			<a href = "AccueilAdmin.php"><input type="button" id="button" value="Retour"/></a>
 		
 		</section>
 
