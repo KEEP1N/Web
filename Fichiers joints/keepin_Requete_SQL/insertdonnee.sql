@@ -49,7 +49,7 @@ VALUES
 
 INSERT INTO deverrouiller (dev_port_ID, dev_acc_ID, dev_niv_ID, dev_heure, dev_dateJour)
 VALUES
-(1, 1, 1, '17:05:34','2014-09-14')
+(1, 1, 1, '17:05:34','2014-09-14'),
 (1, 1, 2, '18:59:26','2014-10-22');
 
 INSERT INTO comporter (comp_niv_ID, comp_serv_ID)

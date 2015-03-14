@@ -44,13 +44,13 @@ foreign key(comp_serv_ID)
 references  service(serv_ID);
 
 alter table comporter
-add constraint fk_comporter_compo_serv_id
-foreign key(compo_serv_id);
+add constraint fk_comporter_comp_serv_id
+foreign key(comp_serv_id)
 references service(serv_id);
 
 alter table comporter 
-add constraint fk_comporter_compo_niv_id
-foreign key (compo_niv_id)
+add constraint fk_comporter_comp_niv_id
+foreign key (comp_niv_id)
 references niveau(niv_id);
 
 alter table accorder
@@ -59,8 +59,8 @@ foreign key (acco_niv_id)
 references niveau(niv_id);
 
 alter table accorder
-add constraint fk_accorder_poss_acco_acc_id
-foreign key(poss_acco_acc_id)
+add constraint fk_accorder_acco_acc_id
+foreign key(acco_acc_id)
 references acces(acc_id);
 
 alter table posseder
