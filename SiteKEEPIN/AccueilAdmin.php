@@ -9,10 +9,8 @@
 <html>
 	
 	<body>
-		<?php
-			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
-		?>
-		<section class="paragraphe">
+	
+		<section class=paragraphe>
 	
 			<h1>Mon compte Administrateur</h1>
 			<a href = "CreationCompte.php"><input id="boutonAdmin" type="button" name="bt1" value="Ajouter un compte"/><br/></a>
@@ -21,7 +19,6 @@
 			<a href = "HistoriqueAdmin.php"><input id="boutonAdmin"  type="button" name="bt4" value="Consulter Historique"/><br/></a>
 		
 		</section>
-		<?php endif;?>
 	
 	</body>
 	

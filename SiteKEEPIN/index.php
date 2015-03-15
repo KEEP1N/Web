@@ -2,6 +2,10 @@
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
+	
+	if(isset($_GET['task'])){
+	session_destroy();
+}
 ?>
 
 <?php
@@ -18,15 +22,16 @@ function connexion(){
 			$Result=mysqli_fetch_array($SQLResult);		
 			if(mysqli_num_rows($SQLResult)==1){
 				if($Result['empl_password']==md5($mdp)){
+					echo('Vous êtes connecté');
 					$_SESSION['empl_mail']=$email;
-					$_SESSION['empl_ro_ID'] = $Result['empl_ro_ID'];
-					if($Result['empl_ro_ID']==2)
+					var_dump($Result['empl_ro_ID']);
+					if($Result['empl_ro_ID']=2)
 					{
 					header('Location: AccueilAdmin.php');
-					}else if($Result['empl_ro_ID']==1){
-					header('Location: AccueilMonCompte.php');
+					}else if($Result['empl_ro_ID']=1){
+					header('AccueilMonCompte.php');
 					}else{
-					echo('Il y a eu une erreur lors de la connexion.');
+					echo('Erreur');
 					}
 				}else{
 					echo('Le mot de passe ne correspond pas.');
@@ -39,10 +44,6 @@ function connexion(){
 		}
 	}
 }
-
-	if(isset($_GET['task'])){
-	session_destroy();
-	}
 
 ?>
 <!DOCTYPE html>
