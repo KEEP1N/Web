@@ -117,10 +117,21 @@ width:  120px;
 	margin: 10px;
 	padding: 4px;
 	height: 30px;
-	width: 60px;
+	min-width: 100px;
 	cursor: pointer;
 	}
 	
+	#retour
+	{
+	background:url("../image/retour.jpg") no-repeat;
+	border:none;
+	min-width: 32px;
+	height: 32px;
+	margin: 0px;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow:1px 1px 2px #C0C0C0;
+	}
 
 	#deconnect
 	{
@@ -153,7 +164,7 @@ width:  120px;
 	{
 	background-color: green;
 	color: white;
-	margin-left:175px;
+	margin-left:100px;
 	margin-top: 20px;
 	box-shadow:1px 1px 1px grey;
 	font-variant: small-caps;

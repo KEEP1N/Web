@@ -32,7 +32,7 @@
 					<td>11h20</td>
 				</tr>
 			</table>
-			<a href = "AccueilMonCompte.php"><input type="button" id="button" value="Retour" style="margin-left:180px">
+			<a href = "AccueilMonCompte.php"><input type="button" id="retour" value=""/></a>
 		
 		</section>
 		

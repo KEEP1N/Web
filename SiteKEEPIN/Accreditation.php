@@ -30,6 +30,7 @@
 			</select><br/>
 			<p style="font-variant:normal">Renseigner le motif de votre demande:</p>
 			<textarea name ="textMulti"></textarea>
+			<a href = "AccueilMonCompte.php"><input type="button" id="retour" value=""/></a>
 			<a href = "AccueilMonCompte.php"><input type="button" name="envoyer" value = "Envoyer" id="envoyer"; onclick="alert('Félicitations! Votre e-mail a été envoyé ! Vous receverez une réponse dès que possible.')"/></a>
 			
 		</section>

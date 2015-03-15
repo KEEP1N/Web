@@ -210,9 +210,10 @@
 			<label for="niveau">Niveau :</label><?php print($form_niveau); ?><br/>
 			
 			<div id="message"><strong><?php inscription(); ?></strong></div>
+			<a href = "AccueilAdmin.php"><input type="button" id="retour" value=""/></a>
 			<input type="submit" id='submit' value="Valider"/>
 			<input type="reset" id='reset' value="Annuler"/>
-			<a href = "AccueilAdmin.php"><input type="button" id="button" value="Retour"/></a>
+			
 			</form>
 		</section>
 	<?php endif;?>
