@@ -6,10 +6,14 @@
 	include 'script/fonction_creationcompte.php';
 ?>
 
+
 <!DOCTYPE html>
 <html>
 
 	<body>
+	<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+	?>
 	<script type="text/javascript">
 		
 			// Fonction pour changer la couleur des champs mal remplis
@@ -211,7 +215,7 @@
 			<a href = "AccueilAdmin.php"><input type="button" id="button" value="Retour"/></a>
 			</form>
 		</section>
-
+	<?php endif;?>
 	</body>
 	
 </html>

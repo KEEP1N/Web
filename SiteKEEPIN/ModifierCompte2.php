@@ -9,6 +9,9 @@
 <html>
 
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+		?>
 	
 		<section class=paragraphe>
 	
@@ -28,6 +31,7 @@
 			<a href = "ModifierCompte1.php"><input type="button" id="button" value="Retour"/></a>
 	
 		</section>
+		<?php endif;?>
 
 	</body>
 	
