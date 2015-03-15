@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
