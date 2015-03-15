@@ -100,7 +100,7 @@
 				{
 					if(!dateOK)
 					{
-						alert("La date de naissance n'est pas valide.");
+						alert("La date de naissance n'est pas valide (jj/mm/aaaa).");
 						return false;
 					}else if(!mailOK){
 						alert("L'e-mail n'est pas valide.");
@@ -178,7 +178,7 @@
 			<label for ="prenom">Prenom :</label>
 			<input type="text" name="prenom" id="prenom" onblur="verifChamp(this)" value="<?php print($prenom);?>"/><br/>
 			<label for ="ddn">Date de Naissance :</label>
-			<input type="date" name="ddn" id="ddn" onblur="verifDate(this)" value="<?php print($ddn);?>"/><br/>
+			<input type="text" name="ddn" id="ddn" onblur="verifDate(this)" value="<?php print($ddn);?>"/><br/>
 			<label for ="matricule">Matricule :</label>
 			<input type="text" name="matricule" id="matricule" value="<?php print($matricule);?>" /><br/>
 			<label for ="entreprise">Entreprise: </label><?php print($form_entreprise)?><br/>
