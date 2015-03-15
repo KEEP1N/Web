@@ -9,6 +9,9 @@
 <html>
 	
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==1) :
+		?>
 	
 		<section class=paragraphe>
 	
@@ -19,6 +22,7 @@
 			<a href = "AccueilMonCompte.php"><input type="submit" id="submit" value="Valider"; onclick="alert('Félicitations! Votre mot de passe a été changé.')"/></a>
 	
 		</section>
+		<?php endif;?>
 
 	</body>
 	

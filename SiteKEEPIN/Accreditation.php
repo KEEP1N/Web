@@ -9,6 +9,9 @@
 <html>
 
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==1) :
+		?>
 
 		<section class="paragraphe" id = "credit">
 		
@@ -30,6 +33,8 @@
 			<a href = "AccueilMonCompte.php"><input type="button" name="envoyer" value = "Envoyer" id="envoyer"; onclick="alert('Félicitations! Votre e-mail a été envoyé ! Vous receverez une réponse dès que possible.')"/></a>
 			
 		</section>
+		
+		<?php endif;?>
 
 	</body>
 	

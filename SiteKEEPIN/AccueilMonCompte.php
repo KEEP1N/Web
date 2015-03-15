@@ -9,6 +9,9 @@
 <html>
 	
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==1) :
+		?>
 	
 		<section class="paragraphe">
 	
@@ -19,6 +22,8 @@
 			<a href = "ModifierMDP.php"><input type="button" id = "button" name="changermdp" value="Changer son mot de passe">
 		
 		</section>
+		
+		<?php endif;?>
 
 	</body>
 

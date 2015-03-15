@@ -9,6 +9,9 @@
 <html>
 
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+		?>
 		
 		<section class=paragraphe>
 	
@@ -37,6 +40,8 @@
 			<a href="AccueilAdmin.php"> <input type="button" id="button" value="Retour" style="margin-left:180px"/> </a>
 
 		</section>
+		
+		<?php endif;?>
 	
 	</body>
 	
