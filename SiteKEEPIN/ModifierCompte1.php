@@ -13,14 +13,10 @@
 		<section class=paragraphe>
 		
 			<h1>Accueil Modification Compte</h1>
-			<label for ="Compte">Selectionner le compte à modifier : </label> <br/>
-			<select name="Compte" id="compte"><br/>
-				<option value="1">JACQUES.Michel</option>
-				<option value="2">Robert.Durand</option>
-				<option value="3">Yves.Fesket</option>
-			</select>@entreprise.com<br/>
+			<label for ="Compte">Rechercher le compte à modifier : </label> <br/>
+			<input type="text" name="Seek" id="seek"/>
 			<a href = "ModifierCompte2.php"><input type="submit" id="submit" value="Valider"/></a>
-			<a href = "AccueilAdmin.php"><input type="reset" id="reset" value="Annuler"/></a>
+			<a href = "AccueilAdmin.php"><input type="button" id="button" value="Retour"/></a>
 			
 	</section>
 

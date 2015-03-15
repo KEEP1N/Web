@@ -6,8 +6,7 @@
 		$SQLRow=mysqli_fetch_array($SQLResult);
 		return($SQLRow['empl_nom'].' '.$SQLRow['empl_prenom']);
    }
-	
-	
+
 	
 	function MonCompte(){
 		global $idconn;

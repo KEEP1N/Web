@@ -83,6 +83,7 @@
 				
 			}
 			
+
 			function verifForm(f)
 			{
 				
@@ -168,6 +169,15 @@
 		</script>
 	
 		<section class='paragraphe'>
+
+			<label for="Acc">Accréditation :</label><select name="Accreditation" id="acc"><br/>
+				<option id="option" value="1">Niveau 1</option>
+				<option id="option" value="2">Niveau 2</option>
+				<option id="option" value="3">Niveau 3</option></select><br/>
+
+			<a href = "AccueilAdmin.php"><input type="submit" id=submit value="Valider"; onclick = "alert('Félicitations ! Nouveau compte créé.')"/></a>
+			<a href = "AccueilAdmin.php"><input type="button" id="button" value="Retour"/></a>
+
 		
 			<h1>Création d'un compte</h1>
 			<form method="post" action="CreationCompte.php" name="formulaire" onsubmit ="return verifForm(this)">
