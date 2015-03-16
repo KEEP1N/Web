@@ -58,7 +58,7 @@ constraint pk_batiment primary key(bat_ID));
 
 create table role(
 ro_ID int not null AUTO_increment,
-ro_libelle varchar(10),
+ro_libelle varchar(50),
 constraint pk_role primary key(ro_Id));
 
 create table deverrouiller(
@@ -82,7 +82,7 @@ constraint pk_accorder primary key(acco_niv_id,acco_acc_id));
 create table posseder(
 poss_empl_id int not null, 
 poss_acc_id int not null,
-constraint pk_posseder primary key(poss_emp_id,poss_acc_id));
+constraint pk_posseder primary key(poss_empl_id,poss_acc_id));
 
 create table autoriser(
 autor_port_id int not null,

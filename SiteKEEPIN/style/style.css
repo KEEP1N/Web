@@ -103,6 +103,11 @@ width:  120px;
 	border-radius:5px;
 	box-shadow:1px 1px 2px #C0C0C0 inset;
 	}
+	
+	select
+	{
+	min-width:140px;
+	}
 
 	textarea
 	{
