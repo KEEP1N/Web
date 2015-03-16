@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
@@ -8,6 +9,9 @@
 <html>
 
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+		?>
 		
 		<section class=paragraphe>
 	
@@ -33,9 +37,11 @@
 				</tr>
 			</table>
 			<?php /*HistoriqueAdmin()*/ ?>
-			<a href="AccueilAdmin.php"> <input type="button" id="button" value="Retour" style="margin-left:180px"/> </a>
+			<a href = "AccueilAdmin.php"><input type="button" id="retour" value=""/></a>
 
 		</section>
+		
+		<?php endif;?>
 	
 	</body>
 	

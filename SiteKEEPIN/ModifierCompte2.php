@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
@@ -8,10 +9,13 @@
 <html>
 
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+		?>
 	
-		<section class=paragraphe>
+		<section class="paragraphe">
 	
-			<h1>Modifier Compte Utilisateur</h1>
+			<h1>Modifier un compte</h1>
 			<label for="Nom">Nom :</label><input type="text" name="Nom" id="Nom" value="Martin"/><br/>
 			<label for ="Prenom">Prenom :</label> <input type="text" name="Prenom" id="prenom" value="Jacques" /><br/>
 			<label for ="DDN">Date de Naissance :</label><input type="date" name="Date_de_Naissance" value="22/11/1979" id="DDN" /><br/>
@@ -23,10 +27,13 @@
 				<option value="1">Niveau 1</option>
 				<option value="2" selected="selected">Niveau 2</option>
 				<option value="3">Niveau 3</option></select><br />
+			<a href = "ModifierCompte1.php"><input type="button" id="retour" value=""/></a>
 			<a href = "AccueilAdmin.php"><input type="submit" id="submit" value="Valider"; onclick= "alert('Félicitations ! Le compte a été modifié !')"/></a>
-			<a href = "ModifierCompte1.php"><input type="reset" id="reset" value="Annuler"/></a>
+			<input type="reset" id='reset' value="Annuler"/>
+			
 	
 		</section>
+		<?php endif;?>
 
 	</body>
 	

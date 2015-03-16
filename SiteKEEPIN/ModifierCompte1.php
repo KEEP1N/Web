@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
@@ -8,21 +9,19 @@
 <html>
 
 	<body>
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+		?>
 	
 		<section class=paragraphe>
 		
-			<h1>Accueil Modification Compte</h1>
-			<label for ="Compte">Selectionner le compte à modifier : </label> <br/>
-			<select name="Compte" id="compte"><br/>
-				<option value="1">JACQUES.Michel</option>
-				<option value="2">Robert.Durand</option>
-				<option value="3">Yves.Fesket</option>
-			</select>@entreprise.com<br/>
-			<a href = "ModifierCompte2.php"><input type="submit" id="submit" value="Valider"/></a>
-			<a href = "AccueilAdmin.php"><input type="reset" id="reset" value="Annuler"/></a>
+			<h1>Modifier un compte</h1>
+			<input type="text" name="seek" id="seek" value="E-mail"/>
+			<a href = "ModifierCompte2.php"><input type="submit" id="submit" value="Rechercher"/></a><br/>
+			<a href = "AccueilAdmin.php"><input type="button" id="retour" value=""/></a>
 			
 	</section>
-
+	<?php endif;?>
 
 	</body>
 	

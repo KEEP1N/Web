@@ -1,6 +1,6 @@
 INSERT INTO role (ro_libelle) VALUES
-("user"),
-("admin");
+("Utilisateur"),
+("Modérateur");
 
 insert into entreprise(entr_numsiret,entr_nom,entr_denomination)
 values
@@ -35,7 +35,7 @@ INSERT INTO employe
 (empl_matricule, empl_nom, empl_prenom, empl_DDN, empl_mail, empl_codePin, empl_password, empl_tel, empl_ro_ID,empl_post_ID,empl_entr_numsiret)
 VALUES
 ('01', 'JACQUES', 'Michel', '1967.10.02', 'MichelJacques@corpaccess.com', '1234', 'password', '0600000006', 1,1,'000000000001'),
-('02', 'MARTIN', 'Jeanne', '1992.04.30', 'MARTINJeanne@corpaccess.com', '5678', 'MDP', '0625698001', 1, 6,'000000000001');
+('02', 'MARTIN', 'Jeanne', '1992.04.30', 'MARTINJeanne@corpaccess.com', '5678', 'MDP', '0625698001', 2, 6,'000000000001');
 
 INSERT INTO porte (port_libelle)
 VALUES ('A008'),
@@ -49,7 +49,7 @@ VALUES
 
 INSERT INTO deverrouiller (dev_port_ID, dev_acc_ID, dev_niv_ID, dev_heure, dev_dateJour)
 VALUES
-(1, 1, 1, '17:05:34','2014-09-14')
+(1, 1, 1, '17:05:34','2014-09-14'),
 (1, 1, 2, '18:59:26','2014-10-22');
 
 INSERT INTO comporter (comp_niv_ID, comp_serv_ID)
