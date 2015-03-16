@@ -44,22 +44,6 @@
 		}
 		
 		
-		function AjoutCompte(){
-		$nom = htmlentities($_POST['Nom']);
-		$prenom = htmlentities($_POST['Prenom']);
-		$ddn = htmlentities($_POST['Date_de_Naissance']);
-		$matricule = htmlentities($_POST['Matricule']);
-		$poste = htmlentities($_POST['Poste']);
-		$tel = htmlentities($_POST['Tel']);
-		$mail = htmlentities($_POST['mail']);
-		$mdp = htmlentities($_POST['mdp']);
-		$codepin = htmlentities($_POST['codepin']);
-		$role = htmlentities($_POST['Role']);
-		$acc = htmlentities($_POST['Accreditation']);
-		
-		$SQLQuery = 'INSERT INTO employe (empl_nom, empl_prenom, empl_DDN, empl_matricule, empl_poste_ID, empl_tel, empl_mail, empl_password, empl_codePIN, empl_ro_ID) value ($nom, $prenom, $ddn, $matricule, $poste, $tel, $mail, $mdp, $codepin, $role)'
-	}
-	
 	
    	function dateheure() {
 		$date = date("d-m-Y");
