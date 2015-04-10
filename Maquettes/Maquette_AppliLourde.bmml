@@ -578,5 +578,11 @@
         <text/>
       </controlProperties>
     </control>
+    <control controlID="183" controlTypeID="com.balsamiq.mockups::StickyNote" x="954" y="494" w="401" h="115" measuredW="109" measuredH="123" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Les%20pages%20Ajouter%2C%20Modifier%20et%20Supprimer%20un%20Service%20auront%20exactement%20les%20m%EAmes%20caract%E9ristiques</text>
+      </controlProperties>
+    </control>
   </controls>
 </mockup>
