@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1618" measuredH="842" mockupW="1573" mockupH="830">
+=======
 <mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2227" measuredH="1827" mockupW="2182" mockupH="1815">
+>>>>>>> 2c49e1de5cac61fbc20174a07bd281fe2dde7287
   <controls>
     <control controlID="11" controlTypeID="__group__" x="45" y="12" w="450" h="400" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
@@ -16,14 +20,14 @@
                     <topheight>26</topheight>
                   </controlProperties>
                 </control>
-                <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="4" y="24" w="443" h="361" measuredW="1200" measuredH="780" zOrder="1" locked="false" isInGroup="0">
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="4" y="24" w="443" h="361" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="0">
                   <controlProperties>
                     <src>./assets/font.jpg</src>
                   </controlProperties>
                 </control>
               </groupChildrenDescriptors>
             </control>
-            <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="153" y="42" w="-1" h="-1" measuredW="144" measuredH="134" zOrder="1" locked="false" isInGroup="0">
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="153" y="42" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="0">
               <controlProperties>
                 <src>./assets/logo.png</src>
               </controlProperties>
@@ -77,12 +81,12 @@
             <topheight>26</topheight>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="4" y="24" w="443" h="361" measuredW="1200" measuredH="780" zOrder="1" locked="false" isInGroup="20">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="4" y="24" w="443" h="361" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="20">
           <controlProperties>
             <src>./assets/font.jpg</src>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="153" y="42" w="-1" h="-1" measuredW="144" measuredH="134" zOrder="2" locked="false" isInGroup="20">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="153" y="42" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="20">
           <controlProperties>
             <src>./assets/logo.png</src>
           </controlProperties>
@@ -111,6 +115,9 @@
         <verticalScrollbar>false</verticalScrollbar>
       </controlProperties>
     </control>
+<<<<<<< HEAD
+    <control controlID="25" controlTypeID="__group__" x="657" y="442" w="450" h="400" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
+=======
     <control controlID="39" controlTypeID="com.balsamiq.mockups::Arrow" x="758" y="23" w="410" h="166" measuredW="150" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <backgroundAlpha>1</backgroundAlpha>
@@ -128,6 +135,7 @@
       </controlProperties>
     </control>
     <control controlID="90" controlTypeID="__group__" x="1168" y="12" w="720" h="400" measuredW="720" measuredH="400" zOrder="8" locked="false" isInGroup="-1">
+>>>>>>> 2c49e1de5cac61fbc20174a07bd281fe2dde7287
       <groupChildrenDescriptors>
         <control controlID="0" controlTypeID="__group__" x="0" y="0" w="450" h="400" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="90">
           <groupChildrenDescriptors>
@@ -209,10 +217,22 @@
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Alert" x="520" y="71" w="-1" h="-1" measuredW="200" measuredH="117" zOrder="1" locked="false" isInGroup="90">
           <controlProperties>
+<<<<<<< HEAD
+            <bottomheight>17</bottomheight>
+            <close>true</close>
+            <maximizeRestore>true</maximizeRestore>
+            <minimize>true</minimize>
+            <text>Poste</text>
+            <topheight>26</topheight>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="4" y="24" w="443" h="361" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="25">
+=======
             <text>Ajouter%20une%20entreprise%0AL%27entreprise%20a%20bien%20%E9t%E9%20ajout%E9%0AOk</text>
           </controlProperties>
         </control>
         <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="315" y="188" w="226" h="170" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="90">
+>>>>>>> 2c49e1de5cac61fbc20174a07bd281fe2dde7287
           <controlProperties>
             <curvature>-1</curvature>
             <direction>bottom</direction>
@@ -220,6 +240,9 @@
             <text/>
           </controlProperties>
         </control>
+<<<<<<< HEAD
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="153" y="42" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="25">
+=======
       </groupChildrenDescriptors>
     </control>
     <control controlID="177" controlTypeID="__group__" x="657" y="427" w="983" h="669" measuredW="983" measuredH="669" zOrder="10" locked="false" isInGroup="-1">
@@ -379,6 +402,7 @@
           </groupChildrenDescriptors>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="165" y="309" w="-1" h="-1" measuredW="144" measuredH="134" zOrder="1" locked="false" isInGroup="177">
+>>>>>>> 2c49e1de5cac61fbc20174a07bd281fe2dde7287
           <controlProperties>
             <src>./assets/logo.png</src>
           </controlProperties>
@@ -392,6 +416,9 @@
             <text>Supprimer%20une%20entreprise%0AL%27entreprise%20a%20bien%20%E9t%E9%20supprim%E9e%0AOk</text>
           </controlProperties>
         </control>
+<<<<<<< HEAD
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="4" y="24" w="443" h="361" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="30">
+=======
         <control controlID="1" controlTypeID="__group__" x="533" y="261" w="450" h="400" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="179">
           <groupChildrenDescriptors>
             <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="0" y="0" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="1">
@@ -468,6 +495,7 @@
           </groupChildrenDescriptors>
         </control>
         <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="877" y="117" w="29" h="509" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="179">
+>>>>>>> 2c49e1de5cac61fbc20174a07bd281fe2dde7287
           <controlProperties>
             <backgroundAlpha>1</backgroundAlpha>
             <curvature>-1</curvature>
@@ -476,6 +504,9 @@
             <text>Si%20l%27entreprise%20n%27est%20rattach%E9e%20%E0%20aucune%20personne</text>
           </controlProperties>
         </control>
+<<<<<<< HEAD
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="153" y="42" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="2" locked="false" isInGroup="30">
+=======
         <control controlID="3" controlTypeID="__group__" x="0" y="269" w="533" h="400" measuredW="533" measuredH="400" zOrder="3" locked="false" isInGroup="179">
           <groupChildrenDescriptors>
             <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="0" y="0" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="3">
@@ -543,6 +574,7 @@
           </groupChildrenDescriptors>
         </control>
         <control controlID="4" controlTypeID="com.balsamiq.mockups::Arrow" x="878" y="621" w="487" h="10" measuredW="150" measuredH="100" zOrder="4" locked="false" isInGroup="179">
+>>>>>>> 2c49e1de5cac61fbc20174a07bd281fe2dde7287
           <controlProperties>
             <curvature>-1</curvature>
             <direction>bottom</direction>
@@ -576,6 +608,31 @@
         <direction>top</direction>
         <leftArrow>false</leftArrow>
         <text/>
+      </controlProperties>
+    </control>
+<<<<<<< HEAD
+    <control controlID="183" controlTypeID="com.balsamiq.mockups::StickyNote" x="954" y="494" w="401" h="115" measuredW="109" measuredH="123" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Les%20pages%20Ajouter%2C%20Modifier%20et%20Supprimer%20un%20Service%20auront%20exactement%20les%20m%EAmes%20caract%E9ristiques</text>
+=======
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Arrow" x="827" y="211" w="10" h="238" measuredW="150" measuredH="100" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>selection%20poste</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::MenuBar" x="657" y="615" w="450" h="29" measuredW="398" measuredH="29" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <selectedIndex>1</selectedIndex>
+        <text>%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Entreprise%2C%20Poste%2C%20Service%2C%20Niveau%2C%20Salle</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::TextInput" x="898" y="668" w="-1" h="-1" measuredW="79" measuredH="26" zOrder="19" locked="false" isInGroup="-1"/>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="787" y="674" w="-1" h="-1" measuredW="61" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Some%20text</text>
+>>>>>>> origin/master
       </controlProperties>
     </control>
   </controls>
