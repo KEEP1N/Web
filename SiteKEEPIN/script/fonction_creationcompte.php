@@ -129,11 +129,13 @@ function inscription(){
 		if(mysqli_num_rows($SQLResultMail)==1){
 			print('Cet e-mail existe déjà dans notre base de données. Veuillez recommencer s\'il vous plaît.');
 		}else{
-			$SQLQueryAjout = "INSERT INTO employe (empl_matricule, empl_nom, empl_prenom, empl_DDN, empl_mail, empl_codePin, empl_password, empl_tel, empl_ro_ID, empl_post_ID, empl_entr_numsiret)";
+			$SQLQueryAjout = "INSERT INTO employe (empl_matricule, empl_nom, empl_prenom, empl_DDN, empl_mail, empl_codePin, empl_password, empl_tel, empl_ro_ID, empl_post_ID, 
+empl_entr_numsiret)";
 			$SQLQueryAjout .= " VALUES ('$matricule','$nom','$prenom','$ddn','$email','$codepin','$mdp','$tel', $role, $poste, '$entreprise')";
 			$SQLResult = mysqli_query($idconn, $SQLQueryAjout);
 			?>
-				<body><script type="text/javascript">alert('Félicitations, l\'inscription a bien été prise en compte.'); document.location.href = 'AccueilAdmin.php'; </script></body>";
+				<body><script type="text/javascript">alert('Félicitations, l\'inscription a bien été prise en compte.'); document.location.href = 'AccueilAdmin.php'; 
+</script></body>";
 			<?php
 		}
 		
