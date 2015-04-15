@@ -1,6 +1,6 @@
 INSERT INTO role (ro_libelle) VALUES
 ("Utilisateur"),
-("Modérateur");
+("Administrateur");
 
 insert into entreprise(entr_numsiret,entr_nom,entr_denomination)
 values
