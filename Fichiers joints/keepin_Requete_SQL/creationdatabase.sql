@@ -1,1 +1,1 @@
-create database Keepin;
+CREATE DATABASE Keepin;
