@@ -48,10 +48,6 @@ ADD CONSTRAINT fk_comporter_comp_serv_id
 FOREIGN KEY(comp_serv_id)
 REFERENCES service(serv_id);
 
-ALTER TABLE comporter 
-ADD CONSTRAINT fk_comporter_comp_niv_id
-FOREIGN KEY (comp_niv_id)
-REFERENCES niveau(niv_id);
 
 ALTER TABLE accorder
 ADD CONSTRAINT fk_accorder_acco_niv_id
