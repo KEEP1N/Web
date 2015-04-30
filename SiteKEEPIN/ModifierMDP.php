@@ -5,7 +5,7 @@
 	include 'basehtml.php';
         
                 if(empty($_SESSION['empl_ID'])) {
-            header('Location:index.php');
+                    header('Location:index.php');
         }
 ?>
 

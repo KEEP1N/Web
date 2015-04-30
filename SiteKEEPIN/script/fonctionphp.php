@@ -10,7 +10,7 @@
 	
 	function MonCompte(){
 		global $idconn;
-		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN FROM poste INNER JOIN employe ON post_ID = empl_post_ID INNER JOIN service ON post_serv_ID = serv_ID' ;
+		$SQLQuery = 'SELECT empl_nom, empl_prenom, serv_libelle, post_libelle, empl_codePIN FROM poste INNER JOIN employe ON post_ID = empl_post_ID INNER JOIN service ON post_serv_ID = serv_ID where empl_ID ='.$_SESSION['empl_ID'].'' ;
 		$SQLResult = mysqli_query($idconn, $SQLQuery);
 		$script = '<table>'.'<tr><th>'.'Nom'.'</th>'.'<th>'.'Prénom'.'</th>'.'<th>'.'Service'.'</th>'.'<th>'.'Poste'.'</th>'.'<th>'."Code d'accés".'</th></tr>';
 		
