@@ -18,6 +18,7 @@ function connexion(){
 			$Result=mysqli_fetch_array($SQLResult);		
 			if(mysqli_num_rows($SQLResult)==1){
 				if($Result['empl_password']==md5($mdp)){
+                                        $_SESSION['empl_ID'] = $Result['empl_ID'];
 					$_SESSION['empl_mail']=$email;
 					$_SESSION['empl_ro_ID'] = $Result['empl_ro_ID'];
 					if($Result['empl_ro_ID']==2)

@@ -20,18 +20,9 @@
 				print(User_name());
 			?>
 			</h1>
-			<table style="margin-left:100px">
-				<tr>
-					<th>Porte</th>
-					<th>Date</th>
-					<th>Heure</th>
-				</tr>
-				<tr>
-					<td>A008</td>
-					<td>09/09/14</td>
-					<td>11h20</td>
-				</tr>
-			</table>
+                        <?php 
+                            $sql = select * 
+                        ?>
 			<a href = "AccueilMonCompte.php"><input type="button" id="retour" value=""/></a>
 		
 		</section>
