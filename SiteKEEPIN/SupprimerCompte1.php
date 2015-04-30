@@ -32,9 +32,9 @@ include 'basehtml.php';
 			}
 		?>
 
-	<form id="searchform" class="searchform" name="searchform" action="ModifierCompte1.php" method="post">
+	<form id="searchform" class="searchform" name="searchform" action="SupprimerCompte1.php" method="post">
 		<section class="paragraphe">
-			<h1>Modifier un compte</h1>
+			<h1>Supprimer un compte</h1>
 			<p> Veuillez rentrer un nom et un prénom:</p>
 			<input type="text" name="search" id="search" placeholder= "Recherche" value="<?php print($recherche);?>" />
 			<input type="submit" id="submit" name="searchButton" value="Rechercher"/><br/>
@@ -49,7 +49,7 @@ include 'basehtml.php';
 					$script = "<ul> ";
 					while ($SQLRow = mysqli_fetch_array($SQLResult))
 					{
-						$script .=  "<a href=\"ModifierCompte2.php?id=".$SQLRow['empl_ID']."\"><li>".utf8_encode($SQLRow['empl_nom'])." ".utf8_encode($SQLRow['empl_prenom'])." - ".utf8_encode($SQLRow['empl_mail'])."</a>";
+						$script .=  "<a href=\"SupprimerCompte2.php?id=".$SQLRow['empl_ID']."\"><li>".utf8_encode($SQLRow['empl_nom'])." ".utf8_encode($SQLRow['empl_prenom'])." - ".utf8_encode($SQLRow['empl_mail'])."</a>";
 					}
 					$script.="</ul>";
 					echo($script);

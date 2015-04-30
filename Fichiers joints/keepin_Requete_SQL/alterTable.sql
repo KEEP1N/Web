@@ -48,10 +48,6 @@ ADD CONSTRAINT fk_comporter_comp_serv_id
 FOREIGN KEY(comp_serv_id)
 REFERENCES service(serv_id);
 
-ALTER TABLE comporter 
-ADD CONSTRAINT fk_comporter_comp_niv_id
-FOREIGN KEY (comp_niv_id)
-REFERENCES niveau(niv_id);
 
 ALTER TABLE accorder
 ADD CONSTRAINT fk_accorder_acco_niv_id
@@ -92,3 +88,14 @@ ALTER TABLE porte
 ADD CONSTRAINT fk_porte_port_bat_ID
 FOREIGN KEY(port_bat_ID)
 REFERENCES batiment(bat_ID);
+
+// Après ajout d\une colonne, si cela ne fonctionne pas, UPDATE la colonne en NULL dans la table concernée
+ALTER TABLE niveau
+ADD CONSTRAINT fk_niveau_serv_ID
+FOREIGN KEY (niv_serv_ID)
+REFERENCES service(serv_ID);
+
+ALTER TABLE employe
+ADD CONSTRAINT fk_empl_niv_ID
+FOREIGN KEY (empl_niv_ID)
+REFERENCES niveau(niv_ID);

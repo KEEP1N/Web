@@ -89,9 +89,18 @@ autor_port_id int NOT NULL,
 autor_acc_id int NOT NULL,
 CONSTRAINT pk_autoriser PRIMARY KEY(autor_port_id,autor_acc_id));
 
+create table ajouter(
+aj_port_id int not null,
+aj_niv_id int not null,
+constraint pk_ajouter primary key(aj_port_id, aj_niv_id));
+
 ALTER TABLE porte
 ADD port_eta_ID int NOT NULL,
 ADD port_bat_ID int NOT NULL;
 
+ALTER TABLE niveau
+ADD niv_serv_ID int NOT NULL;
 
+ALTER TABLE employe
+ADD empl_niv_ID int NOT NULL;
 

@@ -33,4 +33,22 @@
 	}
 	
 
+	// Fonction pour convertir la date entrée en français en date américaine pour MySQL
+	function dateus($ddn){
+	$split = explode("/",$ddn);
+	$annee = $split[2];
+	$mois = $split[1];
+	$jour = $split[0];
+	return "$annee"."/"."$mois"."/"."$jour";
+	}
+
+	//Fonction pour convertir la date américaine de SQL en date française
+	function datefr($ddn){
+		$split = explode("-",$ddn);
+		$annee = $split[0];
+		$mois = $split[1];
+		$jour = $split[2];
+		return "$jour"."/"."$mois"."/"."$annee";
+	}
+
 ?>
