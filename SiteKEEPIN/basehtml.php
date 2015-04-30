@@ -34,7 +34,3 @@
 		Copyright Corp'Access - Tous droits réservés<br/>
 		<?php dateheure() ?>
 	</footer>
-
-	</body>
-
-</html>

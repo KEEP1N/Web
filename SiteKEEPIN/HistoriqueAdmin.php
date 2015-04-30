@@ -15,7 +15,7 @@
 		
 		<section class="paragraphe">
 	
-			<h1 style="margin-left: 150px">Historique de passage</h1>
+			<h1 style="margin-left: 80px">Historique de passage</h1>
 			
 			
 			

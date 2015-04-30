@@ -98,6 +98,9 @@ ALTER TABLE porte
 ADD port_eta_ID int NOT NULL,
 ADD port_bat_ID int NOT NULL;
 
-Alter Table niveau
-add niv_serv_ID int NOT NULL;
+ALTER TABLE niveau
+ADD niv_serv_ID int NOT NULL;
+
+ALTER TABLE employe
+ADD empl_niv_ID int NOT NULL;
 
