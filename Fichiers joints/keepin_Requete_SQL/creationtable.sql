@@ -16,7 +16,7 @@ CONSTRAINT pk_employer PRIMARY KEY(empl_ID));
 CREATE TABLE entreprise(
 entr_numsiret varchar(20) NOT NULL,
 entr_nom varchar(50),
-entr_denomination char(4),
+entr_denomination varchar(4),
 entr_tel varchar(10),
 CONSTRAINT pk_entreprise PRIMARY KEY (entr_numsiret));
 
