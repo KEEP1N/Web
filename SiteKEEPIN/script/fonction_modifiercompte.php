@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 // Déroulant Role:
-$SQLQueryRoleEmpl = 'SELECT ro_ID FROM role INNER JOIN employe ON ro_ID = empl_ro_ID WHERE empl_ID ='.$_GET['id'];
+$SQLQueryRoleEmpl = 'SELECT ro_ID FROM role INNER JOIN employe ON ro_ID = empl_ro_ID WHERE empl_ID ='.$_REQUEST['id'];
 $SQLResultRoleEmpl = mysqli_query($idconn, $SQLQueryRoleEmpl);
 $SQLRowRol = mysqli_fetch_array($SQLResultRoleEmpl);
 $idRole = $SQLRowRol['ro_ID'];
@@ -25,7 +25,7 @@ mysqli_free_result($SQLResultRole);
 
 //ComboBox de SERVICE, présélectionné par le service auquel appartient l'employé
 	$form_serv="";
-	$SQLQueryServEmpl = 'SELECT serv_ID FROM service INNER JOIN poste ON post_serv_ID = serv_ID INNER JOIN employe ON empl_post_ID = post_ID WHERE empl_ID ='.$_GET['id'];
+	$SQLQueryServEmpl = 'SELECT serv_ID FROM service INNER JOIN poste ON post_serv_ID = serv_ID INNER JOIN employe ON empl_post_ID = post_ID WHERE empl_ID ='.$_REQUEST['id'];
 	$SQLResultServEmpl = mysqli_query($idconn, $SQLQueryServEmpl);
 	$SQLRowEmpl = mysqli_fetch_array($SQLResultServEmpl);
 	$idServ = $SQLRowEmpl['serv_ID'];
@@ -46,7 +46,7 @@ mysqli_free_result($SQLResultRole);
 
 //ComboBox de POSTE, présélectionné par le poste auquel appartient l'employé mais qui change si l'utilisateur sélectionne un autre service.
 	$form_post ="";
-	if(isset($_POST["idService"]) and isset($_POST["poste"])){
+	/*if(isset($_POST["idService"]) and isset($_POST["poste"])){
 		$SQLQueryPost = "SELECT * FROM poste WHERE post_serv_ID=".$_POST["idService"]." ORDER BY post_libelle";
 		$SQLResultPost = mysqli_query($idconn, $SQLQueryPost);
 
@@ -54,8 +54,8 @@ mysqli_free_result($SQLResultRole);
 			$form_post .= '<option value="'.$SQLRow['post_ID'].'">'.utf8_encode($SQLRow['post_libelle']).'</option>';
 		}
 		mysqli_free_result($SQLResultPost);
-	}else{
-		$SQLQueryPostEmpl = 'SELECT post_ID FROM poste INNER JOIN employe ON empl_post_ID = post_ID WHERE empl_ID ='.$_GET['id'];
+	}else{*/
+		$SQLQueryPostEmpl = 'SELECT post_ID FROM poste INNER JOIN employe ON empl_post_ID = post_ID WHERE empl_ID ='.$_REQUEST['id'];
 		$SQLResultPostEmpl = mysqli_query($idconn, $SQLQueryPostEmpl);
 		$SQLRowPost = mysqli_fetch_array($SQLResultPostEmpl);
 		$idPoste = $SQLRowPost['post_ID'];
@@ -72,7 +72,9 @@ mysqli_free_result($SQLResultRole);
 			}
 		}
 		mysqli_free_result($SQLResultPost);
-	}
+		
+		
+	
 
 //ComboBox de Niveau, présélectionné par le niveau auquel appartient l'employé mais qui change si l'utilisateur sélectionne un autre service.
 	$form_niv = '';
@@ -85,7 +87,7 @@ mysqli_free_result($SQLResultRole);
 		}
 		mysqli_free_result($SQLResultNiv);
 	}else{
-	$SQLQueryNivEmpl = 'SELECT niv_ID FROM niveau INNER JOIN employe ON empl_niv_ID = niv_ID WHERE empl_ID ='.$_GET['id'];
+	$SQLQueryNivEmpl = 'SELECT niv_ID FROM niveau INNER JOIN employe ON empl_niv_ID = niv_ID WHERE empl_ID ='.$_REQUEST['id'];
 		$SQLResultNivEmpl = mysqli_query($idconn, $SQLQueryNivEmpl);
 		$SQLRowNiv = mysqli_fetch_array($SQLResultNivEmpl);
 		$idNiv = $SQLRowNiv['niv_ID'];
@@ -133,7 +135,7 @@ mysqli_free_result($SQLResultEntr);
 
 function modification(){
 	GLOBAL $idconn;
-	if(empty ($_POST)==true){
+	if(empty($_POST)==true){
 		$nom = "";
 		$prenom = "";
 		$ddn = "";
@@ -163,22 +165,21 @@ function modification(){
 		$entreprise = $_POST['entreprise'];
 		
 		
-		$SQLQueryMail = "SELECT * FROM employe WHERE empl_mail='$email' AND empl_ID !=".$_GET['id'];
+		$SQLQueryMail = "SELECT * FROM employe WHERE empl_mail='$email' AND empl_ID !=".$_REQUEST['id'];
 		$SQLResultMail=mysqli_query($idconn, $SQLQueryMail);		
 		if(mysqli_num_rows($SQLResultMail)==1){
 			print('Cet e-mail existe déjà dans notre base de données. Veuillez recommencer s\'il vous plaît.');
 		}else{
 			$SQLQueryModif = "UPDATE employe SET empl_matricule = '$matricule', empl_nom = '$nom', empl_prenom = '$prenom' , empl_DDN = '$ddn' , empl_mail = '$email'";
 			$SQLQueryModif .= " , empl_codePin = '$codepin' , empl_tel = '$tel' , empl_ro_ID = $role, empl_post_ID = $poste, empl_entr_numsiret = '$entreprise', empl_niv_ID = $niveau";
-			$SQLQueryModif .= " WHERE empl_ID =".$_GET['id'];
-			var_dump($SQLQueryModif);
+			$SQLQueryModif .= " WHERE empl_ID =".$_REQUEST['id'];
 			$SQLResult = mysqli_query($idconn, $SQLQueryModif);
 			?>
-	<!--<body>
+	<body>
 		<script type="text/javascript">
 			alert('Félicitations, le compte a été modifié !'); document.location.href = 'AccueilAdmin.php'; 
 		</script>
-	</body>-->
+	</body>
 			<?php
 		}
 		

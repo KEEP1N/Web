@@ -5,6 +5,7 @@
 	include 'basehtml.php';
 	include 'script/fonction_modifiercompte.php';
 	include 'script/fonction_verification.php';
+	include'script/ajax_query.php';
 ?>
 		<?php
 		if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
@@ -46,7 +47,7 @@
 				}
  
 				// Ici on va voir comment faire du post
-				xhr.open("POST","script/fonction_modifiercompte.php",true);
+				xhr.open("POST","script/ajax_query.php",true);
 				// ne pas oublier ça pour le post
 				xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 				// ne pas oublier de poster les arguments
@@ -69,7 +70,7 @@
 				}
  
 				// Ici on va voir comment faire du post
-				xhr.open("POST","script/fonction_modifiercompte.php",true);
+				xhr.open("POST","script/ajax_query.php",true);
 				// ne pas oublier ça pour le post
 				xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 				// ne pas oublier de poster les arguments
@@ -95,17 +96,17 @@
 			$script="";
 			while ($SQLRow = mysqli_fetch_array($SQLResult))
 			{
-				$script .= "<label for='Nom'>Nom :</label><input type='text' name='nom' id='nom' onblur='verifChamp(this)' value='".utf8_encode($SQLRow['empl_nom'])."' /><br/>";
-				$script .= "<label for='Prenom'>Prénom :</label><input type='text' name='prenom' id='prenom' onblur='verifChamp(this)' value='".utf8_encode($SQLRow['empl_prenom'])."' /><br/>";
+				$script .= "<label for='nom'>Nom :</label><input type='text' name='nom' id='nom' onblur='verifChamp(this)' value='".utf8_encode($SQLRow['empl_nom'])."' /><br/>";
+				$script .= "<label for='prenom'>Prénom :</label><input type='text' name='prenom' id='prenom' onblur='verifChamp(this)' value='".utf8_encode($SQLRow['empl_prenom'])."' /><br/>";
 				$script .= "<label for ='ddn'>Date de Naissance :</label><input id='ddn' name='ddn' onblur='verifDate(this)' value='".datefr($SQLRow['empl_DDN'])."' /><br/>";
 				$script .= "<label for ='matricule'>Matricule :</label><input type='text' name='matricule' id='matricule' value='".utf8_encode($SQLRow['empl_matricule'])."' /><br/>";
 				$script .= "<label for ='entreprise'>Entreprise: </label>".$form_entreprise."<br/>";
-				$script .= "<label for ='Service'>Service :</label>
+				$script .= "<label for ='service'>Service :</label>
 							<select name='service' id='service' onchange='goNiveau();goPoste()'>
 								".$form_serv."
 							</select><br/>";
 							
-				$script .= "<label for ='Poste'>Poste :</label>
+				$script .= "<label for ='poste'>Poste :</label>
 							<div id='selectpost' style='display:inline'>
 								<select name='poste' id='poste' onblur='verifChamp(this)'>
 									".$form_post."
@@ -120,7 +121,7 @@
 							</div><br/>";
 				
 				$script .= "<label for='tel'>Téléphone: </label><input type='text' name='tel' readonly='true' onblur='verifTel(this)' value='".utf8_decode($SQLRow['empl_tel'])."' /><br/>";
-				$script .= "<label for ='mail'>Adresse e-mail :</label> <input type='text' name='mail' id='mail' onblur='verifMail(this)' value='".utf8_encode($SQLRow['empl_mail'])."' /><br/>";
+				$script .= "<label for ='email'>Adresse e-mail :</label> <input type='text' name='email' id='email' onblur='verifMail(this)' value='".utf8_encode($SQLRow['empl_mail'])."' /><br/>";
 				$script .= "<label for ='codepin'>Code Pin :</label> <input type='text' name='codepin' id='codepin' value='".utf8_encode($SQLRow['empl_codePin'])."' /><br/>";
 				$script .= "<label for='role'>Rôle :</label>".$form_role."<br/>";
 				

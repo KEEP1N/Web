@@ -75,16 +75,21 @@
 	function verifForm(f)
 	{
 		
+		
 		var nomOK = verifChamp(f.nom);
+		
 		var dateOK = verifDate(f.ddn);
+		
 		var mailOK = verifMail(f.email);
-		var mdpOK = verifChamp(f.mdp);
+		//var mdpOK = verifChamp(f.mdp);
 		var codepinOK = verifChamp(f.codepin);
 		var prenomOK = verifChamp(f.prenom);
 		var posteOK = document.getElementById("poste").value;
 		var telOK = verifTel(f.tel);
 		
-		if(nomOK && mdpOK && codepinOK && prenomOK)
+		
+		
+		if(nomOK && codepinOK && prenomOK)
 		{
 			if(!dateOK)
 			{

@@ -14,7 +14,7 @@
 	<script type="text/javascript">
 	
 			function getXhr(){
-                                var xhr = null; 
+                var xhr = null; 
 				if(window.XMLHttpRequest) // Firefox et autres
 				   xhr = new XMLHttpRequest(); 
 				else if(window.ActiveXObject){ // Internet Explorer 
