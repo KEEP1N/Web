@@ -6,8 +6,7 @@
         
                         if(empty($_SESSION['empl_ID'])) {
                     header('Location:index.php');
-                        }//elseif(isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==1){
-                                //header('Location:AccueilMonCompte.php');
+                        }
 
             
        

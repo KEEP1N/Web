@@ -3,6 +3,10 @@
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
+        
+                if(empty($_SESSION['empl_ID'])) {
+            header('Location:index.php');
+        }
 ?>
 
 <!DOCTYPE html>
@@ -20,9 +24,7 @@
 				print(User_name());
 			?>
 			</h1>
-                        <?php 
-                            $sql = select * 
-                        ?>
+                        
 			<a href = "AccueilMonCompte.php"><input type="button" id="retour" value=""/></a>
 		
 		</section>
