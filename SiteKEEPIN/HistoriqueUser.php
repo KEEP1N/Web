@@ -9,10 +9,7 @@
         }
 ?>
 
-<!DOCTYPE html>
-<html>
 
-	<body>
 		<?php
 			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==1) :
 		?>

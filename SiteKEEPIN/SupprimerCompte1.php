@@ -5,9 +5,7 @@ include'script/db.php';
 include 'basehtml.php';
 ?>
 
-<!DOCTYPE html>
-<html>
-	<body>
+
 		<?php
 		if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
 		?>

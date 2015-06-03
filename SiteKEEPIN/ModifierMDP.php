@@ -9,10 +9,7 @@
         }
 ?>
 
-<!DOCTYPE html>
-<html>
-	
-	<body>
+
 	
 		<section class="paragraphe">
 	

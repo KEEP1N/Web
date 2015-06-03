@@ -4,10 +4,7 @@
 	include 'basehtml.php';
 ?>
 
-<!DOCTYPE html>
-<html>
 
-	<body>
 	
 		<section class=paragraphe>
 		
