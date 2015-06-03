@@ -1,5 +1,0 @@
-Espace entre les labels et les TextFields: 150
-Espace entre deux lignes de labels/textfields: 50
-Le X des labels: 350
-Width des labels et textfields: 160
-Height des labels et textfields: 25 
