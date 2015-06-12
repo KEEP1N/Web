@@ -124,7 +124,7 @@
 							</div><br/>";
 				
 				$script .= "<label for='tel'>Téléphone: </label><input type='text' name='tel' readonly='true' onblur='verifTel(this)' value='".utf8_decode($SQLRow['empl_tel'])."' /><br/>";
-				$script .= "<label for ='email'>Adresse e-mail :</label> <input type='text' name='email' id='email' onblur='verifMail(this)' value='".utf8_encode($SQLRow['empl_mail'])."' /><br/>";
+				$script .= "<label for ='mail'>Adresse e-mail :</label> <input type='text' name='mail' id='mail' onblur='verifMail(this)' value='".utf8_encode($SQLRow['empl_mail'])."' /><br/>";
 				$script .= "<label for ='codepin'>Code Pin :</label> <input type='text' name='codepin' id='codepin' value='".utf8_encode($SQLRow['empl_codePin'])."' /><br/>";
 				$script .= "<label for='role'>Rôle :</label>".$form_role."<br/>";
 				
