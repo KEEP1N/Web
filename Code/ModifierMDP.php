@@ -19,7 +19,7 @@
 			<label for="newmdp">Nouveau mot de passe: </label><br/><input type="text" name="newmdp" /><br/>
 			<label for="newmdp">Confirmation du nouveau mot de passe:</label><br/><input type="text" name="newmdp2" /><br/>
 			
-			<input type="button" id="retour" value=""/>
+                        <a href = "AccueilMonCompte.php"><input type="button" id="retour" value=""/></a>
 			<input type="submit" id="submit" name="validation" value="Modifier" onclick="alert('Félicitations! Votre mot de passe a été changé.')"/>
                         </form>
                         <?php 

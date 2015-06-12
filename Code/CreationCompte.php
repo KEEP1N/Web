@@ -5,6 +5,9 @@
 	include 'basehtml.php';
 	include 'script/fonction_creationcompte.php';
 	include 'script/fonction_verification.php';
+        
+        if(empty($_SESSION['empl_ID'])) {
+        header('Location:index.php');}
 ?>
 
 

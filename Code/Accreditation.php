@@ -4,10 +4,8 @@
 	include'script/db.php';
 	include 'basehtml.php';
         
-                        if(empty($_SESSION['empl_ID'])) {
-                    header('Location:index.php');
-                        }
-
+        if(empty($_SESSION['empl_ID'])) {
+        header('Location:index.php');}
             
        
         
