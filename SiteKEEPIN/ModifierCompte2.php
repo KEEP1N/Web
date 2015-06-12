@@ -6,6 +6,9 @@
 	include 'script/fonction_modifiercompte.php';
 	include 'script/fonction_verification.php';
 	include'script/ajax_query.php';
+        
+        if(empty($_SESSION['empl_ID'])) {
+        header('Location:index.php');}
 ?>
 		<?php
 		if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :

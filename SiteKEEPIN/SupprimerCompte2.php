@@ -3,6 +3,9 @@
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
+        
+        if(empty($_SESSION['empl_ID'])) {
+        header('Location:index.php');}
 ?>
 <?php
 if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
