@@ -54,7 +54,7 @@ function connexion(){
 		<form method="POST" action="index.php">
 			<label for ="mail">Mail :</label> <input type="mail" name="email" id="email" value="<?php $email; ?>" /></br>
 			<label for="mdp">Mot de passe : </label><input type="password" id="mdp" name="mdp" value="<?php $mdp; ?>" /></br>
-			<a href="MDPOublie.php" id="mdpoublie">Mot de passe oublié?</a><br/>
+			
 			<div id="avertissement"><strong><?php connexion();?></strong></div>
 			<input type="submit" id="submit" name="submit" value="Connexion"/>
 		</form>

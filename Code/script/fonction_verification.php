@@ -93,12 +93,14 @@
 		{
 			if(!dateOK)
 			{
-				alert("La date de naissance n'est pas valide (jj/mm/aaaa).");
-				return false;
+                            alert("La date de naissance n'est pas valide (jj/mm/aaaa).");
+                            return false;
 			}else if(!mailOK){
-				alert("L'e-mail n'est pas valide.");
+                            alert("L'e-mail n'est pas valide.");
 				return false;
-			}else if(posteOK == ""){
+			//}else if(typeof mdpOK != "undefined"){  // Si la variable mdpOK existe et qu'elle n'est pas définie alors:
+                           // alert("Veuillez entrer un mot de passe.");
+                        }else if(posteOK == ""){
 				alert("Veuillez sélectionner un poste.");
 				return false;
 			}else if(!telOK){

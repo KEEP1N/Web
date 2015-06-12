@@ -3,20 +3,12 @@
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
+        include 'script/fonction_supprimercompte.php';
 ?>
 <?php
 if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
 ?>
 
-<script type="text/javascript">
-   function Supp(link){
-		if(confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur?')){
-			<?php print('yes!!!!')?>
-		}else{
-			<?php print('blooop')?>
-		}
-   }
- </script>
 
 <?php
 function afficherDetails(){
@@ -37,7 +29,7 @@ function afficherDetails(){
 		$script .= "<label for='Prenom'>Prénom :</label><input type='text' id='prenom' name='prenom' readonly='true' value = '".utf8_encode($SQLRow['empl_prenom'])."'/><br/>";
 		$script .= "<label for ='ddn'>Date de Naissance :</label><input type='text' id='ddn' name='ddn' readonly='true' value = '".datefr($SQLRow['empl_DDN'])."'/><br/>";
 		$script .= "<label for ='matricule'>Matricule :</label><input type='text' id='matricule' name='matricule' readonly='true' value = '".utf8_encode($SQLRow['empl_matricule'])."'/><br/>";
-		$script .= "<label for ='entreprise'>Entreprise: </label><input type='text' id='entreprise' name='entreprise' readonly='true' value = '".utf8_encode($SQLRow['entr_nom'])."'/><br/>";
+		$script .= "<label for ='entreprise'>Entreprise: </label><input type='text' id='entreprise' name='entreprise' readonly='true' value = '".addslashes(utf8_encode($SQLRow['entr_nom']))."'/><br/>";
 		$script .= "<label for ='Service'>Service :</label><input type='text' id='service' name='service' readonly='true' value = '".utf8_encode($SQLRow['serv_libelle'])."'/><br/>";
 		$script .= "<label for ='Poste'>Poste :</label><input type='text' id='poste' name='poste' readonly='true' value = '".utf8_encode($SQLRow['post_libelle'])."'/><br/>";
 		$script .= "<label for='niveau'>Niveau :</label><input type='text' id='niveau' name='niveau' readonly='true' value = '".utf8_encode($SQLRow['niv_libelle'])."'/><br/>";
@@ -57,14 +49,14 @@ function afficherDetails(){
 			
 			<?php
 			$lien = "SupprimerCompte2.php?id=".$_GET['id'];
+                        //$lien;
 			?>
-			<form method='post' action='<?php $lien; ?>' name='formulaire' onsubmit ='return verifForm(this)'>
-			
+                        <form method='post' action='<?php supprimer(); ?>' name='formulaire' onsubmit="return confirm('Êtes-vous certain(e) de vouloir supprimer ce compte?')">
 			<?php afficherDetails(); ?>
 			<a href = "SupprimerCompte1.php"><input type="button" id="retour" value=""/></a>
-			
-			<input type="submit" id="submit" value="Supprimer" onclick="Supp(this)"; return(false);/>
-			<input type="reset" id="reset" value="Annuler"/>
+			<div id="message"><strong><?php supprimer(); ?></strong></div>
+                        <input type="submit" id="submit" value="Supprimer"/>
+                        <input type="reset" id="reset" value="Annuler"/>
 			
 			</form>
 	
