@@ -54,10 +54,10 @@ function afficherDetails(){
 			$lien = "SupprimerCompte2.php?id=".$_GET['id'];
                         //$lien;
 			?>
-                        <form method='post' action='<?php supprimer(); ?>' name='formulaire' onsubmit="return confirm('Êtes-vous certain(e) de vouloir supprimer ce compte?')">
+                        <form method='post' action='<?php $lien; ?>' name='formulaire' onsubmit="return confirm('Êtes-vous certain(e) de vouloir supprimer ce compte?')">
 			<?php afficherDetails(); ?>
 			<a href = "SupprimerCompte1.php"><input type="button" id="retour" value=""/></a>
-			<div id="message"><strong><?php supprimer(); ?></strong></div>
+                        <div id="message"><strong><?php supprimer(); ?></strong></div>
                         <input type="submit" id="submit" value="Supprimer"/>
                         <input type="reset" id="reset" value="Annuler"/>
 			
