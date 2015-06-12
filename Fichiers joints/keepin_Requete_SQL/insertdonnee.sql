@@ -34,8 +34,8 @@ INSERT INTO poste (post_libelle, post_serv_ID) VALUES
 INSERT INTO employe
 (empl_matricule, empl_nom, empl_prenom, empl_DDN, empl_mail, empl_codePin, empl_password, empl_tel, empl_ro_ID,empl_post_ID,empl_entr_numsiret)
 VALUES
-('01', 'JACQUES', 'Michel', '1967.10.02', 'MichelJacques@corpaccess.com', '1234', 'password', '0600000006', 1,1,'000000000001'),
-('02', 'MARTIN', 'Jeanne', '1992.04.30', 'MARTINJeanne@corpaccess.com', '5678', 'MDP', '0625698001', 2, 6,'000000000001');
+('01', 'JACQUES', 'Michel', '1967.10.02', 'MichelJacques@corpaccess.com', '1234', MD5('password'), '0600000006', 1,1,'000000000001'),
+('02', 'MARTIN', 'Jeanne', '1992.04.30', 'MARTINJeanne@corpaccess.com', '5678', MD5('MDP'), '0625698001', 2, 6,'000000000001');
 
 INSERT INTO porte (port_libelle)
 VALUES ('A008'),
