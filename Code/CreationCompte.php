@@ -88,7 +88,7 @@
 		<section class='paragraphe'>
 		
 			<h1>Création d'un compte</h1>
-			<form method="post" action="CreationCompte.php" name="formulaire" onsubmit ="return verifForm(this)">
+			<form method="post" action="CreationCompte.php" name="formulaire" onsubmit ="return verifFormAjout(this)">
 			
 			<label for="nom">Nom :</label>
 			<input type="text" name="nom" id="nom" onblur="verifChamp(this)" value="<?php print($nom);?>"/><br/>

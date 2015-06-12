@@ -59,7 +59,6 @@ function afficherDetails(){
 			<a href = "SupprimerCompte1.php"><input type="button" id="retour" value=""/></a>
                         <div id="message"><strong><?php supprimer(); ?></strong></div>
                         <input type="submit" id="submit" value="Supprimer"/>
-                        <input type="reset" id="reset" value="Annuler"/>
 			
 			</form>
 	
