@@ -3,13 +3,10 @@
 	include'script/fonctionphp.php';
 	include'script/db.php';
 	include 'basehtml.php';
-<<<<<<< HEAD
         include 'script/fonction_supprimercompte.php';
-=======
         
         if(empty($_SESSION['empl_ID'])) {
         header('Location:index.php');}
->>>>>>> origin/master
 ?>
 <?php
 if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
