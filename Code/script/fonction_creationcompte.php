@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+
 // Déroulant Role:
 $SQLQueryRole = 'SELECT * FROM role';
 $SQLResultRole = mysqli_query($idconn, $SQLQueryRole);

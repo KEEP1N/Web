@@ -12,7 +12,7 @@
 
 
 	<?php
-			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
+            if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
 	?>
 <script type="text/javascript">
 	
