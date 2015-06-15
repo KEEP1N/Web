@@ -9,13 +9,15 @@
                     header('Location:index.php');
         }
 ?>
-
+		<?php
+			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==1) :
+		?>
 
     
 		<section class="paragraphe">
 	
 			<h1> Changement de mot de passe</h1>
-<<<<<<< HEAD
+
                         <form method="post" action="ModifierMDP.php" onsubmit ="return verifForm(this)">
 			<label for="lastmdp">Ancien mot de passe: </label><br/><input type="password" onblur="verifChamp(this)" name="lastmdp" /><br/>
 			<label for="newmdp">Nouveau mot de passe: </label><br/><input type="password" onblur="verifChamp(this)" name="newmdp" /><br/>
@@ -25,7 +27,7 @@
 			<label for="lastmdp">Ancien mot de passe: </label><input type="text" name="lastmdp" /><br/>
 			<label for="newmdp">Nouveau mot de passe: </label><br/><input type="text" name="newmdp" /><br/>
 			<label for="newmdp">Confirmation du nouveau mot de passe:</label><br/><input type="text" name="newmdp2" /><br/>
->>>>>>> 931135be5cdfacf1bd17f696569c146e73263ce7
+
 			
                         <a href = "AccueilMonCompte.php"><input type="button" id="retour" value=""/></a>
 			<input type="submit" id="submit" name="validation" value="Modifier"/>
@@ -52,8 +54,8 @@
                         ?>
                         
 		</section>
-		
-
+		<?php endif;?>
+                
 	</body>
 	
 </html>
