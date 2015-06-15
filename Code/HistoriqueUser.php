@@ -10,7 +10,7 @@
             ?>
 	
                 <section class="paragraphe">
-                        <h1> Historique de <?php print(User_name());?></h1>
+                        <h1> Historique de <?php print(utf8_encode(User_name()));?></h1>
                         <?php 
                         GLOBAL $idconn;
                         $SQLQueryHisto = 'SELECT empl_nom, empl_prenom, dev_heure, dev_dateJour, port_libelle FROM employe INNER JOIN posseder ON empl_ID = poss_empl_id INNER JOIN acces ON poss_acc_id = acc_ID INNER JOIN deverrouiller ON acc_ID = dev_acc_ID INNER JOIN porte ON dev_port_ID = port_ID where empl_ID ='.$_SESSION['empl_ID'];
