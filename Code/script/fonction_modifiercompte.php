@@ -176,13 +176,12 @@
                     $SQLQueryModif = "UPDATE employe SET empl_matricule = '$matricule', empl_nom = '$nom', empl_prenom = '$prenom' , empl_DDN = '$ddn' , empl_mail = '$email'";
                     $SQLQueryModif .= " , empl_codePin = '$codepin' , empl_tel = '$tel' , empl_ro_ID = $role, empl_post_ID = $poste, empl_entr_numsiret = '$entreprise', empl_niv_ID = $niveau";
                     $SQLQueryModif .= " WHERE empl_ID =".$_REQUEST['id'];
-                    var_dump($SQLQueryModif);
 
                     $SQLResult = mysqli_query($idconn, $SQLQueryModif);
 ?>
             <body>
                     <script type="text/javascript">
-                            //alert('Félicitations, le compte a été modifié !'); document.location.href = 'AccueilAdmin.php'; 
+                            alert('Félicitations, le compte a été modifié !'); document.location.href = 'AccueilAdmin.php'; 
                     </script>
             </body>
                             <?php

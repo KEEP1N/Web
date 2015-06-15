@@ -12,7 +12,7 @@
                 if(empty ($_POST)==true){
                 $recherche="";
                 }else{
-                    $recherche = utf8_decode(mysqli_real_escape_string(trim($_POST['search'])));
+                    $recherche = utf8_decode(mysql_real_escape_string(trim($_POST['search'])));
                     $motclef = explode(" ", $recherche);
                     $SQLQuerySearch = "SELECT empl_ID, empl_nom, empl_prenom, empl_mail FROM employe WHERE 1=1";
                     foreach ($motclef as $mot){
