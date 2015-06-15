@@ -122,7 +122,7 @@ function inscription(){
 empl_entr_numsiret, empl_niv_ID)";
 			$SQLQueryAjout .= " VALUES ('$matricule','$nom','$prenom','$ddn','$email','$codepin','$mdp','$tel', $role, $poste, '$entreprise', '$niveau')";
 			$SQLResult = mysqli_query($idconn, $SQLQueryAjout);
-			?>
+                        ?>
 				<body>
                                     <script type="text/javascript">
                                         alert('Félicitations, l\'inscription a bien été prise en compte.'); document.location.href = 'AccueilAdmin.php'; 

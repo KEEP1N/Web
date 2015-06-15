@@ -15,7 +15,7 @@
 	
 			<h1> Changement de mot de passe</h1>
                         <form method="post" action="#">
-			<label for="lastmdp">Ancien mot de passe: </label><br/><input type="text" name="lastmdp" /><br/>
+			<label for="lastmdp">Ancien mot de passe: </label><input type="text" name="lastmdp" /><br/>
 			<label for="newmdp">Nouveau mot de passe: </label><br/><input type="text" name="newmdp" /><br/>
 			<label for="newmdp">Confirmation du nouveau mot de passe:</label><br/><input type="text" name="newmdp2" /><br/>
 			

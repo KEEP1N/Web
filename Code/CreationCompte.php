@@ -14,76 +14,76 @@
 	<?php
 			if (isset($_SESSION['empl_mail']) && $_SESSION['empl_ro_ID']==2) :
 	?>
-	<script type="text/javascript">
+<script type="text/javascript">
 	
-			function getXhr(){
-                var xhr = null; 
-				if(window.XMLHttpRequest) // Firefox et autres
-				   xhr = new XMLHttpRequest(); 
-				else if(window.ActiveXObject){ // Internet Explorer 
-				   try {
-			                xhr = new ActiveXObject("Msxml2.XMLHTTP");
-			            } catch (e) {
-			                xhr = new ActiveXObject("Microsoft.XMLHTTP");
-			            }
-				}
-				else { // XMLHttpRequest non supporté par le navigateur 
-				   alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest..."); 
-				   xhr = false; 
-				} 
-                                return xhr;
-			}
- 
+        function getXhr(){
+            var xhr = null; 
+            if(window.XMLHttpRequest) // Firefox et autres
+               xhr = new XMLHttpRequest(); 
+            else if(window.ActiveXObject){ // Internet Explorer 
+               try {
+                    xhr = new ActiveXObject("Msxml2.XMLHTTP");
+                } catch (e) {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+            }
+            else { // XMLHttpRequest non supporté par le navigateur 
+               alert("Votre navigateur ne supporte pas les objets XMLHTTPRequest..."); 
+               xhr = false; 
+            } 
+            return xhr;
+        }
+
+
+        // Méthode qui sera appelée sur le click du bouton
+
+        function goPoste(){
+            var xhr = getXhr();
+            // On défini ce qu'on va faire quand on aura la réponse
+            xhr.onreadystatechange = function(){
+                    // On ne fait quelque chose que si on a tout reçu et que le serveur est ok
+                    if(xhr.readyState == 4 && xhr.status == 200){
+                            leselect = xhr.responseText;
+                            // On se sert de innerHTML pour rajouter les options a la liste
+                            document.getElementById('poste').innerHTML = leselect;
+                    }
+            }
+
+            // Ici on va voir comment faire du post
+            xhr.open("POST","script/fonction_creationcompte.php",true);
+            // ne pas oublier ça pour le post
+            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            // ne pas oublier de poster les arguments
+            // ici, l'id du service
+            sel = document.getElementById('service');
+            idservice = sel.options[sel.selectedIndex].value;
+            xhr.send("idService="+idservice + '&poste=1');
+        }
+
+        function goNiveau(){
+            var xhr = getXhr();
+            // On défini ce qu'on va faire quand on aura la réponse
+            xhr.onreadystatechange = function(){
+                    // On ne fait quelque chose que si on a tout reçu et que le serveur est ok
+                    if(xhr.readyState == 4 && xhr.status == 200){
+                            leselect = xhr.responseText;
+                            // On se sert de innerHTML pour rajouter les options a la liste
+                            document.getElementById('niveau').innerHTML = leselect;
+                    }
+            }
+
+            // Ici on va voir comment faire du post
+            xhr.open("POST","script/fonction_creationcompte.php",true);
+            // ne pas oublier ça pour le post
+            xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+            // ne pas oublier de poster les arguments
+            // ici, l'id du service
+            sel = document.getElementById('service');
+            idservice = sel.options[sel.selectedIndex].value;
+            xhr.send("idService="+idservice + '&niveau=1');
+        }
 			
-			// Méthode qui sera appelée sur le click du bouton
-			
-			function goPoste(){
-				var xhr = getXhr();
-				// On défini ce qu'on va faire quand on aura la réponse
-				xhr.onreadystatechange = function(){
-					// On ne fait quelque chose que si on a tout reçu et que le serveur est ok
-					if(xhr.readyState == 4 && xhr.status == 200){
-						leselect = xhr.responseText;
-						// On se sert de innerHTML pour rajouter les options a la liste
-						document.getElementById('poste').innerHTML = leselect;
-					}
-				}
- 
-				// Ici on va voir comment faire du post
-				xhr.open("POST","script/fonction_creationcompte.php",true);
-				// ne pas oublier ça pour le post
-				xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-				// ne pas oublier de poster les arguments
-				// ici, l'id du service
-				sel = document.getElementById('service');
-				idservice = sel.options[sel.selectedIndex].value;
-				xhr.send("idService="+idservice + '&poste=1');
-			}
-			
-			function goNiveau(){
-				var xhr = getXhr();
-				// On défini ce qu'on va faire quand on aura la réponse
-				xhr.onreadystatechange = function(){
-					// On ne fait quelque chose que si on a tout reçu et que le serveur est ok
-					if(xhr.readyState == 4 && xhr.status == 200){
-						leselect = xhr.responseText;
-						// On se sert de innerHTML pour rajouter les options a la liste
-						document.getElementById('niveau').innerHTML = leselect;
-					}
-				}
- 
-				// Ici on va voir comment faire du post
-				xhr.open("POST","script/fonction_creationcompte.php",true);
-				// ne pas oublier ça pour le post
-				xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-				// ne pas oublier de poster les arguments
-				// ici, l'id du service
-				sel = document.getElementById('service');
-				idservice = sel.options[sel.selectedIndex].value;
-				xhr.send("idService="+idservice + '&niveau=1');
-			}
-			
-		</script>
+</script>
 	
 		<section class='paragraphe'>
 		
