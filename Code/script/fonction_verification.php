@@ -72,16 +72,11 @@
 	}
 	
 
-	function verifForm(f)
+	function verifFormModif(f)
 	{
-		
-		
 		var nomOK = verifChamp(f.nom);
-		
 		var dateOK = verifDate(f.ddn);
-		
 		var mailOK = verifMail(f.email);
-		//var mdpOK = verifChamp(f.mdp);
 		var codepinOK = verifChamp(f.codepin);
 		var prenomOK = verifChamp(f.prenom);
 		var posteOK = document.getElementById("poste").value;
@@ -98,8 +93,47 @@
 			}else if(!mailOK){
                             alert("L'e-mail n'est pas valide.");
 				return false;
-			//}else if(typeof mdpOK != "undefined"){  // Si la variable mdpOK existe et qu'elle n'est pas définie alors:
-                           // alert("Veuillez entrer un mot de passe.");
+                        }else if(posteOK == ""){
+				alert("Veuillez sélectionner un poste.");
+				return false;
+			}else if(!telOK){
+				alert("Le numéro de téléphone n'est pas valide.");
+				return false;
+			}else{
+				return true;
+			}
+		}else{
+			alert("Veuillez remplir correctement tous les champs.");
+			return false;
+		}
+	}
+        
+        function verifFormAjout(f)
+        {
+		
+		
+		var nomOK = verifChamp(f.nom);
+		
+		var dateOK = verifDate(f.ddn);
+		
+		var mailOK = verifMail(f.email);
+		var mdpOK = verifChamp(f.mdp);
+		var codepinOK = verifChamp(f.codepin);
+		var prenomOK = verifChamp(f.prenom);
+		var posteOK = document.getElementById("poste").value;
+		var telOK = verifTel(f.tel);
+		
+		
+		
+		if(nomOK && codepinOK && prenomOK && mdpOK)
+		{
+			if(!dateOK)
+			{
+                            alert("La date de naissance n'est pas valide (jj/mm/aaaa).");
+                            return false;
+			}else if(!mailOK){
+                            alert("L'e-mail n'est pas valide.");
+				return false;
                         }else if(posteOK == ""){
 				alert("Veuillez sélectionner un poste.");
 				return false;

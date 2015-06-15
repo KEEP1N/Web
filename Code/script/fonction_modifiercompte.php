@@ -35,17 +35,18 @@ mysqli_free_result($SQLResultRole);
 	$SQLResultServ = mysqli_query($idconn, $SQLQueryServ);
 	
 	while ($SQLRow = mysqli_fetch_array ($SQLResultServ)){
-		if($SQLRow['serv_ID'] == $idServ){
-		$form_serv .= '<option selected="selected" value="'.$SQLRow['serv_ID'].'">'.utf8_encode($SQLRow['serv_libelle']).'</option>';
-		}else{
-		$form_serv .= '<option value="'.$SQLRow['serv_ID'].'">'.utf8_encode($SQLRow['serv_libelle']).'</option>';
-		}
+            if($SQLRow['serv_ID'] == $idServ){
+                $form_serv .= '<option selected="selected" value="'.$SQLRow['serv_ID'].'">'.utf8_encode($SQLRow['serv_libelle']).'</option>';
+            }else{
+                $form_serv .= '<option value="'.$SQLRow['serv_ID'].'">'.utf8_encode($SQLRow['serv_libelle']).'</option>';
+            }
 	}
 	mysqli_free_result($SQLResultServ);
 
 
 //ComboBox de POSTE, présélectionné par le poste auquel appartient l'employé mais qui change si l'utilisateur sélectionne un autre service.
 	$form_post ="";
+        
 	/*if(isset($_POST["idService"]) and isset($_POST["poste"])){
 		$SQLQueryPost = "SELECT * FROM poste WHERE post_serv_ID=".$_POST["idService"]." ORDER BY post_libelle";
 		$SQLResultPost = mysqli_query($idconn, $SQLQueryPost);
@@ -70,7 +71,9 @@ mysqli_free_result($SQLResultRole);
 			}else{
 			$form_post .= '<option value="'.$SQLRow['post_ID'].'">'.utf8_encode($SQLRow['post_libelle']).'</option>';
 			}
-		}
+		//}
+        }
+            
 		mysqli_free_result($SQLResultPost);
 		
 		
@@ -173,11 +176,13 @@ function modification(){
 			$SQLQueryModif = "UPDATE employe SET empl_matricule = '$matricule', empl_nom = '$nom', empl_prenom = '$prenom' , empl_DDN = '$ddn' , empl_mail = '$email'";
 			$SQLQueryModif .= " , empl_codePin = '$codepin' , empl_tel = '$tel' , empl_ro_ID = $role, empl_post_ID = $poste, empl_entr_numsiret = '$entreprise', empl_niv_ID = $niveau";
 			$SQLQueryModif .= " WHERE empl_ID =".$_REQUEST['id'];
+                        var_dump($SQLQueryModif);
+                        
 			$SQLResult = mysqli_query($idconn, $SQLQueryModif);
 			?>
 	<body>
 		<script type="text/javascript">
-			alert('Félicitations, le compte a été modifié !'); document.location.href = 'AccueilAdmin.php'; 
+			//alert('Félicitations, le compte a été modifié !'); document.location.href = 'AccueilAdmin.php'; 
 		</script>
 	</body>
 			<?php
