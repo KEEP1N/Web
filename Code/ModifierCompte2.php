@@ -135,12 +135,11 @@
 
                 <section class="paragraphe">
 
-                        <h1>Modifier un compte</h1>
-
-                        <?php
-                        $lien = "ModifierCompte2.php?id=".$_GET['id'];
-                        ?>
-                        <form method='post' action='<?php $lien; ?>' name='formulaire' onsubmit ='return verifFormModif(this)'>
+                    <h1>Modifier un compte</h1>
+                    <?php
+                    $lien = "ModifierCompte2.php?id=".$_GET['id'];
+                    ?>
+                    <form method='post' action='<?php $lien; ?>' name='formulaire' onsubmit ='return verifFormModif(this)'>
 
                         <?php afficherDetails(); ?>
 
@@ -149,10 +148,12 @@
                         <input type="submit" id="submit" value="Modifier"/>
                         <input type="reset" id="reset" value="Annuler"/>
 
-                        </form>
+                    </form>
 
                 </section>
-                <?php endif;?>
+            <?php 
+                endif;
+            ?>
 
         </body>
 
